@@ -10,6 +10,7 @@
 // Import the interfaces
 #import "IntroLayer.h"
 #import "CombatScene.h"
+#import "SoundEffects.h"
 
 
 #pragma mark - IntroLayer
@@ -54,7 +55,9 @@
 	// add the label as a child to this Layer
 	[self addChild: background];
     
+    
     [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"basic.plist"];
+    [SoundEffects preload];
 
 	
 	// In one second transition to the new scene

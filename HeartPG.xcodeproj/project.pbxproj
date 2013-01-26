@@ -145,6 +145,14 @@
 		FC13A9E316B476B800394086 /* BattleTheme1-Loop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FC13A9E116B476B800394086 /* BattleTheme1-Loop.mp3 */; };
 		FC13A9E616B47A1200394086 /* basic-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC13A9E416B47A1200394086 /* basic-hd.plist */; };
 		FC13A9E716B47A1200394086 /* basic-hd.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = FC13A9E516B47A1200394086 /* basic-hd.pvr.ccz */; };
+		FC13A9F416B48DAA00394086 /* EggDeath.caf in Resources */ = {isa = PBXBuildFile; fileRef = FC13A9ED16B48DAA00394086 /* EggDeath.caf */; };
+		FC13A9F516B48DAA00394086 /* EvilLaugh1.caf in Resources */ = {isa = PBXBuildFile; fileRef = FC13A9EE16B48DAA00394086 /* EvilLaugh1.caf */; };
+		FC13A9F616B48DAA00394086 /* EvilLaugh2.caf in Resources */ = {isa = PBXBuildFile; fileRef = FC13A9EF16B48DAA00394086 /* EvilLaugh2.caf */; };
+		FC13A9F716B48DAA00394086 /* PumpingUp-Alternate.caf in Resources */ = {isa = PBXBuildFile; fileRef = FC13A9F016B48DAA00394086 /* PumpingUp-Alternate.caf */; };
+		FC13A9F816B48DAA00394086 /* PumpingUp.caf in Resources */ = {isa = PBXBuildFile; fileRef = FC13A9F116B48DAA00394086 /* PumpingUp.caf */; };
+		FC13A9F916B48DAA00394086 /* ScrambleYou.caf in Resources */ = {isa = PBXBuildFile; fileRef = FC13A9F216B48DAA00394086 /* ScrambleYou.caf */; };
+		FC13A9FA16B48DAA00394086 /* TasteMyBacon.caf in Resources */ = {isa = PBXBuildFile; fileRef = FC13A9F316B48DAA00394086 /* TasteMyBacon.caf */; };
+		FC13A9FD16B4901900394086 /* SoundEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = FC13A9FC16B4901700394086 /* SoundEffects.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -428,6 +436,15 @@
 		FC13A9E116B476B800394086 /* BattleTheme1-Loop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "BattleTheme1-Loop.mp3"; sourceTree = "<group>"; };
 		FC13A9E416B47A1200394086 /* basic-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "basic-hd.plist"; path = "HeartPG/Resources/SpriteSheets/basic-hd.plist"; sourceTree = "<group>"; };
 		FC13A9E516B47A1200394086 /* basic-hd.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = "basic-hd.pvr.ccz"; path = "HeartPG/Resources/SpriteSheets/basic-hd.pvr.ccz"; sourceTree = "<group>"; };
+		FC13A9ED16B48DAA00394086 /* EggDeath.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EggDeath.caf; sourceTree = "<group>"; };
+		FC13A9EE16B48DAA00394086 /* EvilLaugh1.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EvilLaugh1.caf; sourceTree = "<group>"; };
+		FC13A9EF16B48DAA00394086 /* EvilLaugh2.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EvilLaugh2.caf; sourceTree = "<group>"; };
+		FC13A9F016B48DAA00394086 /* PumpingUp-Alternate.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PumpingUp-Alternate.caf"; sourceTree = "<group>"; };
+		FC13A9F116B48DAA00394086 /* PumpingUp.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PumpingUp.caf; sourceTree = "<group>"; };
+		FC13A9F216B48DAA00394086 /* ScrambleYou.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ScrambleYou.caf; sourceTree = "<group>"; };
+		FC13A9F316B48DAA00394086 /* TasteMyBacon.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = TasteMyBacon.caf; sourceTree = "<group>"; };
+		FC13A9FB16B4901500394086 /* SoundEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundEffects.h; sourceTree = "<group>"; };
+		FC13A9FC16B4901700394086 /* SoundEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundEffects.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -504,6 +521,8 @@
 				FC13A9C116B43E9500394086 /* EnemyCharacterLayer.m */,
 				FC13A9CE16B4506800394086 /* HeartNode.h */,
 				FC13A9CF16B4506900394086 /* HeartNode.m */,
+				FC13A9FB16B4901500394086 /* SoundEffects.h */,
+				FC13A9FC16B4901700394086 /* SoundEffects.m */,
 				FC13A82D16B4375F00394086 /* Resources */,
 				FC13A84716B4375F00394086 /* libs */,
 				FC13A9A016B4376400394086 /* Supporting Files */,
@@ -888,6 +907,7 @@
 		FC13A9D116B451E400394086 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
+				FC13A9EC16B48DAA00394086 /* Effects */,
 				FC13A9E016B476B800394086 /* BattleTheme1-Intro.mp3 */,
 				FC13A9E116B476B800394086 /* BattleTheme1-Loop.mp3 */,
 			);
@@ -911,6 +931,20 @@
 				FC13A9DD16B46DD100394086 /* README.md */,
 			);
 			path = "CCNode+SFGestureRecognizers";
+			sourceTree = "<group>";
+		};
+		FC13A9EC16B48DAA00394086 /* Effects */ = {
+			isa = PBXGroup;
+			children = (
+				FC13A9ED16B48DAA00394086 /* EggDeath.caf */,
+				FC13A9EE16B48DAA00394086 /* EvilLaugh1.caf */,
+				FC13A9EF16B48DAA00394086 /* EvilLaugh2.caf */,
+				FC13A9F016B48DAA00394086 /* PumpingUp-Alternate.caf */,
+				FC13A9F116B48DAA00394086 /* PumpingUp.caf */,
+				FC13A9F216B48DAA00394086 /* ScrambleYou.caf */,
+				FC13A9F316B48DAA00394086 /* TasteMyBacon.caf */,
+			);
+			path = Effects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -983,6 +1017,13 @@
 				FC13A9E316B476B800394086 /* BattleTheme1-Loop.mp3 in Resources */,
 				FC13A9E616B47A1200394086 /* basic-hd.plist in Resources */,
 				FC13A9E716B47A1200394086 /* basic-hd.pvr.ccz in Resources */,
+				FC13A9F416B48DAA00394086 /* EggDeath.caf in Resources */,
+				FC13A9F516B48DAA00394086 /* EvilLaugh1.caf in Resources */,
+				FC13A9F616B48DAA00394086 /* EvilLaugh2.caf in Resources */,
+				FC13A9F716B48DAA00394086 /* PumpingUp-Alternate.caf in Resources */,
+				FC13A9F816B48DAA00394086 /* PumpingUp.caf in Resources */,
+				FC13A9F916B48DAA00394086 /* ScrambleYou.caf in Resources */,
+				FC13A9FA16B48DAA00394086 /* TasteMyBacon.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1102,6 +1143,7 @@
 				FC13A9C216B43E9500394086 /* EnemyCharacterLayer.m in Sources */,
 				FC13A9D016B4506900394086 /* HeartNode.m in Sources */,
 				FC13A9DE16B46DD100394086 /* CCNode+SFGestureRecognizers.m in Sources */,
+				FC13A9FD16B4901900394086 /* SoundEffects.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

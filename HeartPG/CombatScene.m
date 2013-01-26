@@ -24,7 +24,7 @@
         [self addChild:self.enemyLayer];
         
         // start playing the background music
-        [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"BattleTheme1-Loop.mp3" loop:YES];
+//        [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"BattleTheme1-Loop.mp3" loop:YES];
         
         [self setupGestures];
 	}

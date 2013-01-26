@@ -7,8 +7,10 @@
 //
 
 #import "HeartNode.h"
+#import "SimpleAudioEngine.h"
 
 #define kMAX_PUMP   110
+#define kSUPER_PUMP 99
 
 @implementation HeartNode
 
@@ -31,8 +33,13 @@
 }
 
 -(void) setPumpLevel:(NSInteger)pumpLevel {
+    BOOL isSuper = (_pumpLevel < kSUPER_PUMP && _pumpLevel + pumpLevel > kSUPER_PUMP);
     _pumpLevel = pumpLevel;
     self.scale = 0.5 + 2.0 * (_pumpLevel / (double) kMAX_PUMP);
+    
+    if (isSuper) {
+        [[SimpleAudioEngine sharedEngine] playEffect:@"PumpingUp.caf"];
+    }
 }
 
 -(void) pump:(NSInteger)amount {
