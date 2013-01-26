@@ -10,10 +10,9 @@
 #import "cocos2d.h"
 #import "HeartNode.h"
 
-@interface HeartCharacterLayer : CCLayer<UIGestureRecognizerDelegate> {
-    
-}
+@interface HeartCharacterLayer : CCLayer
 
 @property(strong, nonatomic) HeartNode* heart;
+@property(strong, nonatomic) CCSprite* pump;
 
 @end

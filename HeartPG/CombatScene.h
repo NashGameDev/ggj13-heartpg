@@ -11,7 +11,7 @@
 #import "HeartCharacterLayer.h"
 #import "EnemyCharacterLayer.h"
 
-@interface CombatScene : CCScene {
+@interface CombatScene : CCScene<UIGestureRecognizerDelegate> {
     
 }
 

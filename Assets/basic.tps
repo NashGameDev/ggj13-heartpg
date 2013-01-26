@@ -8,7 +8,23 @@
         <key>verbose</key>
         <false/>
         <key>autoSDSettings</key>
-        <array/>
+        <array>
+            <struct type="AutoSDSettings">
+                <key>scale</key>
+                <double>0.5</double>
+                <key>extension</key>
+                <string>.</string>
+                <key>acceptFractionalValues</key>
+                <false/>
+                <key>maxTextureSize</key>
+                <QSize>
+                    <key>width</key>
+                    <int>2048</int>
+                    <key>height</key>
+                    <int>2048</int>
+                </QSize>
+            </struct>
+        </array>
         <key>allowRotation</key>
         <true/>
         <key>quiet</key>
@@ -22,7 +38,7 @@
         <key>dataFormat</key>
         <string>cocos2d</string>
         <key>textureFileName</key>
-        <filename>../HeartPG/Resources/SpriteSheets/basic.pvr.ccz</filename>
+        <filename>../HeartPG/Resources/SpriteSheets/basic-hd.pvr.ccz</filename>
         <key>flipPVR</key>
         <false/>
         <key>ditherType</key>
@@ -111,9 +127,9 @@
             <enum type="AndEngine::MagFilter">MagLinear</enum>
         </struct>
         <key>dataFileName</key>
-        <filename>../HeartPG/Resources/SpriteSheets/basic.plist</filename>
+        <filename>../HeartPG/Resources/SpriteSheets/basic-hd.plist</filename>
         <key>mainExtension</key>
-        <string></string>
+        <string>-hd.</string>
         <key>forceIdenticalLayout</key>
         <false/>
         <key>outputFormat</key>
@@ -144,6 +160,8 @@
             <filename>background-small.png</filename>
             <filename>Enemy-ArtificialHeart.png</filename>
             <filename>Enemy-Hamburger.png</filename>
+            <filename>heartbot.png</filename>
+            <filename>baconegg.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

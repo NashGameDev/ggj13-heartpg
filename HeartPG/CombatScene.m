@@ -24,10 +24,49 @@
         [self addChild:self.enemyLayer];
         
         // start playing the background music
-        [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"Music-QuickBattleTheme.mp3" loop:YES];
+        [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"BattleTheme1-Loop.mp3" loop:YES];
+        
+        [self setupGestures];
 	}
     
 	return self;
 }
+
+-(void) setupGestures {
+    UITapGestureRecognizer * tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTapGesture:)];
+    [self.heartLayer.pump addGestureRecognizer:tapGestureRecognizer];
+    tapGestureRecognizer.delegate = self;
+    
+    UIGestureRecognizer *panGestureRecognizer2 = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePanGesture:)];
+    panGestureRecognizer2.delegate = self;
+    [self.heartLayer.pump addGestureRecognizer:panGestureRecognizer2];
+}
+
+
+#pragma mark - GestureRecognizer delegate
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer
+{
+    return YES;
+}
+
+- (void)handlePanGesture:(UIPanGestureRecognizer*)aPanGestureRecognizer
+{
+    CCNode *node = aPanGestureRecognizer.node;
+    CGPoint translation = [aPanGestureRecognizer translationInView:aPanGestureRecognizer.view];
+    translation.y *= -1;
+    [aPanGestureRecognizer setTranslation:CGPointZero inView:aPanGestureRecognizer.view];
+    
+    node.position = ccpAdd(node.position, translation);
+}
+
+- (void)handlePinchGesture:(UIPinchGestureRecognizer*)recognizer {
+    
+}
+
+- (void)handleTapGesture:(UITapGestureRecognizer*)recognizer {
+    [self.heartLayer.heart pump:kBasicPump];
+}
+
+
 
 @end

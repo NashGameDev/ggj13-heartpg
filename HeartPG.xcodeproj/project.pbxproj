@@ -140,8 +140,11 @@
 		FC13A9C716B44D7E00394086 /* basic.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC13A9C516B44D7E00394086 /* basic.plist */; };
 		FC13A9C816B44D7E00394086 /* basic.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = FC13A9C616B44D7E00394086 /* basic.pvr.ccz */; };
 		FC13A9D016B4506900394086 /* HeartNode.m in Sources */ = {isa = PBXBuildFile; fileRef = FC13A9CF16B4506900394086 /* HeartNode.m */; };
-		FC13A9D316B451E400394086 /* Music-QuickBattleTheme.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FC13A9D216B451E400394086 /* Music-QuickBattleTheme.mp3 */; };
 		FC13A9DE16B46DD100394086 /* CCNode+SFGestureRecognizers.m in Sources */ = {isa = PBXBuildFile; fileRef = FC13A9DC16B46DD100394086 /* CCNode+SFGestureRecognizers.m */; };
+		FC13A9E216B476B800394086 /* BattleTheme1-Intro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FC13A9E016B476B800394086 /* BattleTheme1-Intro.mp3 */; };
+		FC13A9E316B476B800394086 /* BattleTheme1-Loop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FC13A9E116B476B800394086 /* BattleTheme1-Loop.mp3 */; };
+		FC13A9E616B47A1200394086 /* basic-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC13A9E416B47A1200394086 /* basic-hd.plist */; };
+		FC13A9E716B47A1200394086 /* basic-hd.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = FC13A9E516B47A1200394086 /* basic-hd.pvr.ccz */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -418,10 +421,13 @@
 		FC13A9C616B44D7E00394086 /* basic.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = basic.pvr.ccz; path = HeartPG/Resources/SpriteSheets/basic.pvr.ccz; sourceTree = "<group>"; };
 		FC13A9CE16B4506800394086 /* HeartNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeartNode.h; sourceTree = "<group>"; };
 		FC13A9CF16B4506900394086 /* HeartNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeartNode.m; sourceTree = "<group>"; };
-		FC13A9D216B451E400394086 /* Music-QuickBattleTheme.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Music-QuickBattleTheme.mp3"; sourceTree = "<group>"; };
 		FC13A9DB16B46DD100394086 /* CCNode+SFGestureRecognizers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CCNode+SFGestureRecognizers.h"; sourceTree = "<group>"; };
 		FC13A9DC16B46DD100394086 /* CCNode+SFGestureRecognizers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CCNode+SFGestureRecognizers.m"; sourceTree = "<group>"; };
 		FC13A9DD16B46DD100394086 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		FC13A9E016B476B800394086 /* BattleTheme1-Intro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "BattleTheme1-Intro.mp3"; sourceTree = "<group>"; };
+		FC13A9E116B476B800394086 /* BattleTheme1-Loop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "BattleTheme1-Loop.mp3"; sourceTree = "<group>"; };
+		FC13A9E416B47A1200394086 /* basic-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "basic-hd.plist"; path = "HeartPG/Resources/SpriteSheets/basic-hd.plist"; sourceTree = "<group>"; };
+		FC13A9E516B47A1200394086 /* basic-hd.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = "basic-hd.pvr.ccz"; path = "HeartPG/Resources/SpriteSheets/basic-hd.pvr.ccz"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -871,6 +877,8 @@
 		FC13A9C916B44D8A00394086 /* SpriteSheets */ = {
 			isa = PBXGroup;
 			children = (
+				FC13A9E416B47A1200394086 /* basic-hd.plist */,
+				FC13A9E516B47A1200394086 /* basic-hd.pvr.ccz */,
 				FC13A9C516B44D7E00394086 /* basic.plist */,
 				FC13A9C616B44D7E00394086 /* basic.pvr.ccz */,
 			);
@@ -880,7 +888,8 @@
 		FC13A9D116B451E400394086 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
-				FC13A9D216B451E400394086 /* Music-QuickBattleTheme.mp3 */,
+				FC13A9E016B476B800394086 /* BattleTheme1-Intro.mp3 */,
+				FC13A9E116B476B800394086 /* BattleTheme1-Loop.mp3 */,
 			);
 			name = Audio;
 			path = Assets/Audio;
@@ -970,7 +979,10 @@
 				FC13A9C416B4425000394086 /* Default-568h@2x.png in Resources */,
 				FC13A9C716B44D7E00394086 /* basic.plist in Resources */,
 				FC13A9C816B44D7E00394086 /* basic.pvr.ccz in Resources */,
-				FC13A9D316B451E400394086 /* Music-QuickBattleTheme.mp3 in Resources */,
+				FC13A9E216B476B800394086 /* BattleTheme1-Intro.mp3 in Resources */,
+				FC13A9E316B476B800394086 /* BattleTheme1-Loop.mp3 in Resources */,
+				FC13A9E616B47A1200394086 /* basic-hd.plist in Resources */,
+				FC13A9E716B47A1200394086 /* basic-hd.pvr.ccz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

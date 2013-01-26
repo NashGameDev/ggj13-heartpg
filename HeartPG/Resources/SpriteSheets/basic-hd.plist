@@ -7,67 +7,67 @@
             <key>Enemy-ArtificialHeart.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,583},{130,120}}</string>
+                <string>{{2,1160},{259,239}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <true/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{130,120}}</string>
+                <string>{{0,0},{259,239}}</string>
                 <key>sourceSize</key>
-                <string>{130,120}</string>
+                <string>{259,239}</string>
             </dict>
             <key>Enemy-Hamburger.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{404,2},{129,98}}</string>
+                <string>{{804,2},{257,195}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <true/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{129,98}}</string>
+                <string>{{0,0},{257,195}}</string>
                 <key>sourceSize</key>
-                <string>{129,98}</string>
+                <string>{257,195}</string>
             </dict>
             <key>background-small.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{404,133},{21,320}}</string>
+                <string>{{804,261},{42,640}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{21,320}}</string>
+                <string>{{0,0},{42,640}}</string>
                 <key>sourceSize</key>
-                <string>{21,320}</string>
+                <string>{42,640}</string>
             </dict>
             <key>baconegg.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,2},{400,353}}</string>
+                <string>{{2,2},{800,706}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{400,353}}</string>
+                <string>{{0,0},{800,706}}</string>
                 <key>sourceSize</key>
-                <string>{400,353}</string>
+                <string>{800,706}</string>
             </dict>
             <key>heartbot.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,357},{224,400}}</string>
+                <string>{{2,710},{448,800}}</string>
                 <key>offset</key>
-                <string>{-8,0}</string>
+                <string>{-16,0}</string>
                 <key>rotated</key>
                 <true/>
                 <key>sourceColorRect</key>
-                <string>{{22,0},{224,400}}</string>
+                <string>{{44,0},{448,800}}</string>
                 <key>sourceSize</key>
-                <string>{284,400}</string>
+                <string>{568,800}</string>
             </dict>
         </dict>
         <key>metadata</key>
@@ -75,13 +75,13 @@
             <key>format</key>
             <integer>2</integer>
             <key>realTextureFileName</key>
-            <string>basic.pvr.ccz</string>
+            <string>basic-hd.pvr.ccz</string>
             <key>size</key>
-            <string>{512,1024}</string>
+            <string>{1024,2048}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:e71ada948d0e60b5e7152017e42f6cbe$</string>
+            <string>$TexturePacker:SmartUpdate:4be2223b727913d4dbbb16d01b20c857$</string>
             <key>textureFileName</key>
-            <string>basic.pvr.ccz</string>
+            <string>basic-hd.pvr.ccz</string>
         </dict>
     </dict>
 </plist>

@@ -18,7 +18,9 @@
 	// always call "super" init
 	// Apple recommends to re-assign "self" with the "super's" return value
 	if( (self=[super init]) ) {
-        CCSprite* sprite = [CCSprite spriteWithFile:@"Icon.png"];
+        CCSprite* sprite = [CCSprite spriteWithSpriteFrameName:@"heartbot.png"];
+        sprite.flipX = YES;
+        sprite.scale = 2.0;
         [self addChild:sprite];
         self.contentSize = sprite.contentSize;
         
