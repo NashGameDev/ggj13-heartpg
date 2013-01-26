@@ -21,12 +21,9 @@
 	// always call "super" init
 	// Apple recommends to re-assign "self" with the "super's" return value
 	if( (self=[super init]) ) {
-        CCSprite* sprite = [CCSprite spriteWithSpriteFrameName:@"heartbot.png"];
-        sprite.flipX = YES;
-        sprite.scale = 2.0;
+        CCSprite* sprite = [CCSprite spriteWithSpriteFrameName:@"heartman.png"];
         [self addChild:sprite];
         self.contentSize = sprite.contentSize;        
-        self.touchRect = CGRectInset(CGRectMake(0, 0, self.contentSize.width, self.contentSize.height), -self.contentSize.width, -self.contentSize.height);
         
         self.pumpLevel = 0;
     }
@@ -36,7 +33,7 @@
 
 -(void) setPumpLevel:(NSInteger)pumpLevel {
     _pumpLevel = pumpLevel;
-    self.scale = 0.5 + 2.0 * (_pumpLevel / (double) kMAX_PUMP);
+    self.scale = 0.25 + 2.0 * (_pumpLevel / (double) kMAX_PUMP);
 }
 
 -(void) pump:(NSInteger)amount {
