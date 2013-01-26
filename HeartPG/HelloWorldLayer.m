@@ -12,6 +12,7 @@
 
 // Needed to obtain the Navigation Controller
 #import "AppDelegate.h"
+#import "CombatScene.h"
 
 #pragma mark - HelloWorldLayer
 
@@ -91,8 +92,12 @@
 			[leaderboardViewController release];
 		}
 									   ];
+        
+        CCMenuItem* itemCombat = [CCMenuItemFont itemWithString:@"Combat" block:^(id sender) {
+            [[CCDirector sharedDirector] pushScene:[CombatScene node]];            
+        }];
 		
-		CCMenu *menu = [CCMenu menuWithItems:itemAchievement, itemLeaderboard, nil];
+		CCMenu *menu = [CCMenu menuWithItems:itemAchievement, itemLeaderboard, itemCombat, nil];
 		
 		[menu alignItemsHorizontallyWithPadding:20];
 		[menu setPosition:ccp( size.width/2, size.height/2 - 50)];
