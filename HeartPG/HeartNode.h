@@ -1,5 +1,5 @@
 //
-//  HeartCharacterLayer.h
+//  HeartNode.h
 //  HeartPG
 //
 //  Created by Christopher Cotton on 1/26/13.
@@ -8,12 +8,14 @@
 
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
-#import "HeartNode.h"
 
-@interface HeartCharacterLayer : CCLayer {
+@interface HeartNode : CCNode {
     
 }
 
-@property(strong, nonatomic) HeartNode* heart;
+@property(assign, nonatomic) NSInteger pumpLevel;
+
+-(void) pump:(NSInteger)amount;
+-(void) deflate:(NSInteger)amount;
 
 @end

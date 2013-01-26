@@ -139,6 +139,7 @@
 		FC13A9C416B4425000394086 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC13A9C316B4424F00394086 /* Default-568h@2x.png */; };
 		FC13A9C716B44D7E00394086 /* basic.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC13A9C516B44D7E00394086 /* basic.plist */; };
 		FC13A9C816B44D7E00394086 /* basic.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = FC13A9C616B44D7E00394086 /* basic.pvr.ccz */; };
+		FC13A9D016B4506900394086 /* HeartNode.m in Sources */ = {isa = PBXBuildFile; fileRef = FC13A9CF16B4506900394086 /* HeartNode.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -413,6 +414,8 @@
 		FC13A9C316B4424F00394086 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		FC13A9C516B44D7E00394086 /* basic.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = basic.plist; path = HeartPG/Resources/SpriteSheets/basic.plist; sourceTree = "<group>"; };
 		FC13A9C616B44D7E00394086 /* basic.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = basic.pvr.ccz; path = HeartPG/Resources/SpriteSheets/basic.pvr.ccz; sourceTree = "<group>"; };
+		FC13A9CE16B4506800394086 /* HeartNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeartNode.h; sourceTree = "<group>"; };
+		FC13A9CF16B4506900394086 /* HeartNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeartNode.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -485,6 +488,8 @@
 				FC13A9BB16B43D0E00394086 /* HeartCharacterLayer.m */,
 				FC13A9C016B43E9500394086 /* EnemyCharacterLayer.h */,
 				FC13A9C116B43E9500394086 /* EnemyCharacterLayer.m */,
+				FC13A9CE16B4506800394086 /* HeartNode.h */,
+				FC13A9CF16B4506900394086 /* HeartNode.m */,
 				FC13A82D16B4375F00394086 /* Resources */,
 				FC13A84716B4375F00394086 /* libs */,
 				FC13A9A016B4376400394086 /* Supporting Files */,
@@ -1047,6 +1052,7 @@
 				FC13A9B816B43B4D00394086 /* CombatScene.m in Sources */,
 				FC13A9BC16B43D0E00394086 /* HeartCharacterLayer.m in Sources */,
 				FC13A9C216B43E9500394086 /* EnemyCharacterLayer.m in Sources */,
+				FC13A9D016B4506900394086 /* HeartNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

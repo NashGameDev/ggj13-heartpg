@@ -16,6 +16,8 @@
 	if( (self=[super init]) ) {
         CCSprite* sprite = [CCSprite spriteWithFile:@"Icon.png"];
         [self addChild:sprite];
+        
+        self.isTouchEnabled = YES;
 	}
     
 	return self;
