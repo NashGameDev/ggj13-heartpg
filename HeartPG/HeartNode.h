@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
 
+#define kBasicPump 10
+
 @interface HeartNode : CCNode {
     
 }

@@ -8,6 +8,7 @@
 
 #import "HeartNode.h"
 
+#define kMAX_PUMP   110
 
 @implementation HeartNode
 
@@ -17,19 +18,44 @@
 	// always call "super" init
 	// Apple recommends to re-assign "self" with the "super's" return value
 	if( (self=[super init]) ) {
+        CCSprite* sprite = [CCSprite spriteWithFile:@"Icon.png"];
+        [self addChild:sprite];
+        self.contentSize = sprite.contentSize;
         
-
+        self.pumpLevel = 0;
     }
     
     return self;
 }
 
+-(void) setPumpLevel:(NSInteger)pumpLevel {
+    _pumpLevel = pumpLevel;
+    self.scale = 0.5 + 2.0 * (_pumpLevel / (double) kMAX_PUMP);
+}
+
 -(void) pump:(NSInteger)amount {
-    
+    self.pumpLevel += amount;
+    // if more than 110, generate event that heart blows up?
+    if (self.pumpLevel > kMAX_PUMP) {
+        self.pumpLevel = 0;
+    }
 }
 
 -(void) deflate:(NSInteger)amount {
+    if (self.pumpLevel > 0) {
+        self.pumpLevel -= MIN(self.pumpLevel, amount);
+    }
+}
+
+-(void) onEnter {
+    [super onEnter];
     
+    CCCallBlock* deflateAction = [CCCallBlock actionWithBlock:^{
+        [self deflate:2];
+    }];
+    
+    [self runAction:[CCRepeatForever actionWithAction: [CCSequence actionOne:deflateAction two:[CCDelayTime actionWithDuration:0.2]]]];
+
 }
 
 @end

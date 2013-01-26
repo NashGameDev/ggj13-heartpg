@@ -7,6 +7,7 @@
 //
 
 #import "CombatScene.h"
+#import "SimpleAudioEngine.h"
 
 @implementation CombatScene
 
@@ -21,6 +22,9 @@
         self.enemyLayer = [EnemyCharacterLayer node];
         self.enemyLayer.position = ccp(self.contentSize.width/4 * 3, self.contentSize.height/2.0);
         [self addChild:self.enemyLayer];
+        
+        // start playing the background music
+        [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"Music-QuickBattleTheme.mp3" loop:YES];
 	}
     
 	return self;
