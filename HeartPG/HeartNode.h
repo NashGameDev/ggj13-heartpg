@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
+#import "SimpleAudioEngine.h"
 
 #define kBasicPump 10
 
@@ -17,6 +18,7 @@
 @property(strong, nonatomic) CCSprite* heartGraphic;
 @property(assign, nonatomic) NSInteger pumpLevel;
 @property(assign, nonatomic) BOOL superPump;
+@property(assign, nonatomic) ALuint currentPumpEffect;
 
 -(void) pump:(NSInteger)amount;
 -(void) deflate:(NSInteger)amount;

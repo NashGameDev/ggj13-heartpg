@@ -154,6 +154,11 @@
 		FC13A9FA16B48DAA00394086 /* TasteMyBacon.caf in Resources */ = {isa = PBXBuildFile; fileRef = FC13A9F316B48DAA00394086 /* TasteMyBacon.caf */; };
 		FC13A9FD16B4901900394086 /* SoundEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = FC13A9FC16B4901700394086 /* SoundEffects.m */; };
 		FC13A9FF16B4927800394086 /* Heartbeat-Tap.caf in Resources */ = {isa = PBXBuildFile; fileRef = FC13A9FE16B4927800394086 /* Heartbeat-Tap.caf */; };
+		FC13AA0916B498FC00394086 /* BattleTheme-Lose.caf in Resources */ = {isa = PBXBuildFile; fileRef = FC13AA0416B498FA00394086 /* BattleTheme-Lose.caf */; };
+		FC13AA0A16B498FC00394086 /* BattleTheme-Win.caf in Resources */ = {isa = PBXBuildFile; fileRef = FC13AA0516B498FA00394086 /* BattleTheme-Win.caf */; };
+		FC13AA0B16B498FC00394086 /* EnemyAttack1.caf in Resources */ = {isa = PBXBuildFile; fileRef = FC13AA0616B498FB00394086 /* EnemyAttack1.caf */; };
+		FC13AA0C16B498FC00394086 /* Pumping-1Bleep.caf in Resources */ = {isa = PBXBuildFile; fileRef = FC13AA0716B498FB00394086 /* Pumping-1Bleep.caf */; };
+		FC13AA0D16B498FC00394086 /* Pumping-2Bleeps.caf in Resources */ = {isa = PBXBuildFile; fileRef = FC13AA0816B498FB00394086 /* Pumping-2Bleeps.caf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -447,6 +452,11 @@
 		FC13A9FB16B4901500394086 /* SoundEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundEffects.h; sourceTree = "<group>"; };
 		FC13A9FC16B4901700394086 /* SoundEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundEffects.m; sourceTree = "<group>"; };
 		FC13A9FE16B4927800394086 /* Heartbeat-Tap.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Heartbeat-Tap.caf"; sourceTree = "<group>"; };
+		FC13AA0416B498FA00394086 /* BattleTheme-Lose.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BattleTheme-Lose.caf"; sourceTree = "<group>"; };
+		FC13AA0516B498FA00394086 /* BattleTheme-Win.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BattleTheme-Win.caf"; sourceTree = "<group>"; };
+		FC13AA0616B498FB00394086 /* EnemyAttack1.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EnemyAttack1.caf; sourceTree = "<group>"; };
+		FC13AA0716B498FB00394086 /* Pumping-1Bleep.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pumping-1Bleep.caf"; sourceTree = "<group>"; };
+		FC13AA0816B498FB00394086 /* Pumping-2Bleeps.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pumping-2Bleeps.caf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -938,6 +948,11 @@
 		FC13A9EC16B48DAA00394086 /* Effects */ = {
 			isa = PBXGroup;
 			children = (
+				FC13AA0416B498FA00394086 /* BattleTheme-Lose.caf */,
+				FC13AA0516B498FA00394086 /* BattleTheme-Win.caf */,
+				FC13AA0616B498FB00394086 /* EnemyAttack1.caf */,
+				FC13AA0716B498FB00394086 /* Pumping-1Bleep.caf */,
+				FC13AA0816B498FB00394086 /* Pumping-2Bleeps.caf */,
 				FC13A9FE16B4927800394086 /* Heartbeat-Tap.caf */,
 				FC13A9ED16B48DAA00394086 /* EggDeath.caf */,
 				FC13A9EE16B48DAA00394086 /* EvilLaugh1.caf */,
@@ -1028,6 +1043,11 @@
 				FC13A9F916B48DAA00394086 /* ScrambleYou.caf in Resources */,
 				FC13A9FA16B48DAA00394086 /* TasteMyBacon.caf in Resources */,
 				FC13A9FF16B4927800394086 /* Heartbeat-Tap.caf in Resources */,
+				FC13AA0916B498FC00394086 /* BattleTheme-Lose.caf in Resources */,
+				FC13AA0A16B498FC00394086 /* BattleTheme-Win.caf in Resources */,
+				FC13AA0B16B498FC00394086 /* EnemyAttack1.caf in Resources */,
+				FC13AA0C16B498FC00394086 /* Pumping-1Bleep.caf in Resources */,
+				FC13AA0D16B498FC00394086 /* Pumping-2Bleeps.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

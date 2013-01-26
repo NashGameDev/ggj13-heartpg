@@ -12,6 +12,7 @@
 
 #define kMAX_PUMP   110
 #define kSUPER_PUMP 99
+#define kSMALL_PUMP_LEVEL 40
 
 @implementation HeartNode
 
@@ -44,7 +45,13 @@
         [self.heartGraphic setDisplayFrame:frame];
         [[SimpleAudioEngine sharedEngine] playEffect:kPumpingUp];
     } else {
-        [[SimpleAudioEngine sharedEngine] playEffect:kHeartbeatTap];
+        [[SimpleAudioEngine sharedEngine] stopEffect:self.currentPumpEffect];
+        if (self.pumpLevel < kSMALL_PUMP_LEVEL) {
+            self.currentPumpEffect = [[SimpleAudioEngine sharedEngine] playEffect:kPumping1Bleep];
+        } else {
+            self.currentPumpEffect = [[SimpleAudioEngine sharedEngine] playEffect:kPumping2Bleeps];
+        }
+        
     }
     
     
