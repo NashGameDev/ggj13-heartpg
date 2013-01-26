@@ -13,7 +13,7 @@
 -(id) init
 {
 	if( (self=[super init]) ) {
-        CCSprite* sprite = [CCSprite spriteWithFile:@"fps_images.png"];
+        CCSprite* sprite = [CCSprite spriteWithSpriteFrameName:@"Enemy-Hamburger.png"];
         [self addChild:sprite];
 	}
     

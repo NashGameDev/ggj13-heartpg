@@ -53,6 +53,9 @@
 
 	// add the label as a child to this Layer
 	[self addChild: background];
+    
+    [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"basic.plist"];
+
 	
 	// In one second transition to the new scene
 	[self scheduleOnce:@selector(makeTransition:) delay:1];
