@@ -14,7 +14,7 @@
 @interface HeartNode : CCNode {
     
 }
-
+@property(strong, nonatomic) CCSprite* heartGraphic;
 @property(assign, nonatomic) NSInteger pumpLevel;
 @property(assign, nonatomic) BOOL superPump;
 

@@ -164,6 +164,7 @@
             <filename>baconegg.png</filename>
             <filename>heartman.png</filename>
             <filename>heartman2.png</filename>
+            <filename>pumped.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>
