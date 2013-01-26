@@ -12,6 +12,7 @@
 
 #define kMAX_PUMP   110
 #define kSUPER_PUMP 99
+#define kSMALL_PUMP_LEVEL 40
 
 @implementation HeartNode
 
@@ -21,9 +22,9 @@
 	// always call "super" init
 	// Apple recommends to re-assign "self" with the "super's" return value
 	if( (self=[super init]) ) {
-        CCSprite* sprite = [CCSprite spriteWithSpriteFrameName:@"heartman.png"];
-        [self addChild:sprite];
-        self.contentSize = sprite.contentSize;        
+        self.heartGraphic = [CCSprite spriteWithSpriteFrameName:@"heartman.png"];
+        [self addChild:self.heartGraphic];
+        self.contentSize = self.heartGraphic.contentSize;
         
         self.pumpLevel = 0;
     }
@@ -40,9 +41,17 @@
     if (!self.superPump && self.pumpLevel < kSUPER_PUMP && self.pumpLevel + amount > kSUPER_PUMP) {
         // make a super pump!
         self.superPump = YES;
+        CCSpriteFrame *frame = [[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:@"pumped.png"];
+        [self.heartGraphic setDisplayFrame:frame];
         [[SimpleAudioEngine sharedEngine] playEffect:kPumpingUp];
     } else {
-        [[SimpleAudioEngine sharedEngine] playEffect:kHeartbeatTap];
+        [[SimpleAudioEngine sharedEngine] stopEffect:self.currentPumpEffect];
+        if (self.pumpLevel < kSMALL_PUMP_LEVEL) {
+            self.currentPumpEffect = [[SimpleAudioEngine sharedEngine] playEffect:kPumping1Bleep];
+        } else {
+            self.currentPumpEffect = [[SimpleAudioEngine sharedEngine] playEffect:kPumping2Bleeps];
+        }
+        
     }
     
     
@@ -59,8 +68,10 @@
         self.pumpLevel -= MIN(self.pumpLevel, amount);
     }
     
-    if (self.pumpLevel <= 0.0f) {
+    if (self.superPump && self.pumpLevel <= 0.0f) {
         self.superPump = NO;
+        CCSpriteFrame *frame = [[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:@"heartman.png"];
+        [self.heartGraphic setDisplayFrame:frame];
     }
     
     
@@ -73,7 +84,7 @@
         [self deflate:2];
     }];
     
-    [self runAction:[CCRepeatForever actionWithAction: [CCSequence actionOne:deflateAction two:[CCDelayTime actionWithDuration:0.2]]]];
+    [self runAction:[CCRepeatForever actionWithAction: [CCSequence actionOne:deflateAction two:[CCDelayTime actionWithDuration:0.1]]]];
 
 }
 

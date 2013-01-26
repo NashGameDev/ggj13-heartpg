@@ -18,11 +18,14 @@ NSString * const kPumpingUp = @"PumpingUp.caf";
 NSString * const kScrambleYou = @"ScrambleYou.caf";
 NSString * const kTasteMyBacon = @"TasteMyBacon.caf";
 NSString * const kHeartbeatTap = @"Heartbeat-Tap.caf";
+NSString * const kPumping1Bleep = @"Pumping-1Bleep.caf";
+NSString * const kPumping2Bleeps = @"Pumping-2Bleeps.caf";
 
 
 +(void) preload {
     SimpleAudioEngine *engine = [SimpleAudioEngine sharedEngine];
-    NSArray* allSounds = @[kEggDeath, kEvilLaugh1, kEvilLaugh2, kPumpingUp, kScrambleYou, kTasteMyBacon, kHeartbeatTap];
+    NSArray* allSounds = @[kEggDeath, kEvilLaugh1, kEvilLaugh2, kPumpingUp, kScrambleYou, kTasteMyBacon, kHeartbeatTap,
+    kPumping1Bleep, kPumping2Bleeps];
 
     for( NSString* effect in allSounds) {
         [engine preloadEffect:effect];

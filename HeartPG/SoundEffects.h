@@ -16,6 +16,10 @@ FOUNDATION_EXPORT NSString * const kPumpingUp;
 FOUNDATION_EXPORT NSString * const kScrambleYou;
 FOUNDATION_EXPORT NSString * const kTasteMyBacon;
 FOUNDATION_EXPORT NSString * const kHeartbeatTap;
+FOUNDATION_EXPORT NSString * const kHeartbeatTap;
+FOUNDATION_EXPORT NSString * const kPumping1Bleep;
+FOUNDATION_EXPORT NSString * const kPumping2Bleeps;
+
 
 
 @interface SoundEffects : NSObject {
