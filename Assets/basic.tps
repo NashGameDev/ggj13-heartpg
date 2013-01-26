@@ -162,6 +162,8 @@
             <filename>Enemy-Hamburger.png</filename>
             <filename>heartbot.png</filename>
             <filename>baconegg.png</filename>
+            <filename>heartman.png</filename>
+            <filename>heartman2.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

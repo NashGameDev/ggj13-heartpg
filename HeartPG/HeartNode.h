@@ -16,8 +16,10 @@
 }
 
 @property(assign, nonatomic) NSInteger pumpLevel;
+@property(assign, nonatomic) BOOL superPump;
 
 -(void) pump:(NSInteger)amount;
 -(void) deflate:(NSInteger)amount;
+
 
 @end

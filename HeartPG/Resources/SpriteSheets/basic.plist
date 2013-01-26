@@ -7,11 +7,11 @@
             <key>Enemy-ArtificialHeart.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,583},{130,120}}</string>
+                <string>{{806,2},{130,120}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <true/>
+                <false/>
                 <key>sourceColorRect</key>
                 <string>{{0,0},{130,120}}</string>
                 <key>sourceSize</key>
@@ -20,11 +20,11 @@
             <key>Enemy-Hamburger.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{404,2},{129,98}}</string>
+                <string>{{806,124},{129,98}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <true/>
+                <false/>
                 <key>sourceColorRect</key>
                 <string>{{0,0},{129,98}}</string>
                 <key>sourceSize</key>
@@ -33,7 +33,7 @@
             <key>background-small.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{404,133},{21,320}}</string>
+                <string>{{938,2},{21,320}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -59,7 +59,7 @@
             <key>heartbot.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,357},{224,400}}</string>
+                <string>{{404,2},{224,400}}</string>
                 <key>offset</key>
                 <string>{-8,0}</string>
                 <key>rotated</key>
@@ -69,6 +69,32 @@
                 <key>sourceSize</key>
                 <string>{284,400}</string>
             </dict>
+            <key>heartman.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,357},{335,361}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{335,361}}</string>
+                <key>sourceSize</key>
+                <string>{335,361}</string>
+            </dict>
+            <key>heartman2.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{404,228},{335,361}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{335,361}}</string>
+                <key>sourceSize</key>
+                <string>{335,361}</string>
+            </dict>
         </dict>
         <key>metadata</key>
         <dict>
@@ -77,9 +103,9 @@
             <key>realTextureFileName</key>
             <string>basic.pvr.ccz</string>
             <key>size</key>
-            <string>{512,1024}</string>
+            <string>{1024,1024}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:e71ada948d0e60b5e7152017e42f6cbe$</string>
+            <string>$TexturePacker:SmartUpdate:a4ac23bc9d166f60e5366232262a25da$</string>
             <key>textureFileName</key>
             <string>basic.pvr.ccz</string>
         </dict>

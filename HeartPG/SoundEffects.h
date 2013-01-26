@@ -9,6 +9,14 @@
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
 
+FOUNDATION_EXPORT NSString * const kEggDeath;
+FOUNDATION_EXPORT NSString * const kEvilLaugh1;
+FOUNDATION_EXPORT NSString * const kEvilLaugh2;
+FOUNDATION_EXPORT NSString * const kPumpingUp;
+FOUNDATION_EXPORT NSString * const kScrambleYou;
+FOUNDATION_EXPORT NSString * const kTasteMyBacon;
+FOUNDATION_EXPORT NSString * const kHeartbeatTap;
+
 
 @interface SoundEffects : NSObject {
     

@@ -153,6 +153,7 @@
 		FC13A9F916B48DAA00394086 /* ScrambleYou.caf in Resources */ = {isa = PBXBuildFile; fileRef = FC13A9F216B48DAA00394086 /* ScrambleYou.caf */; };
 		FC13A9FA16B48DAA00394086 /* TasteMyBacon.caf in Resources */ = {isa = PBXBuildFile; fileRef = FC13A9F316B48DAA00394086 /* TasteMyBacon.caf */; };
 		FC13A9FD16B4901900394086 /* SoundEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = FC13A9FC16B4901700394086 /* SoundEffects.m */; };
+		FC13A9FF16B4927800394086 /* Heartbeat-Tap.caf in Resources */ = {isa = PBXBuildFile; fileRef = FC13A9FE16B4927800394086 /* Heartbeat-Tap.caf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -445,6 +446,7 @@
 		FC13A9F316B48DAA00394086 /* TasteMyBacon.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = TasteMyBacon.caf; sourceTree = "<group>"; };
 		FC13A9FB16B4901500394086 /* SoundEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundEffects.h; sourceTree = "<group>"; };
 		FC13A9FC16B4901700394086 /* SoundEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundEffects.m; sourceTree = "<group>"; };
+		FC13A9FE16B4927800394086 /* Heartbeat-Tap.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Heartbeat-Tap.caf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -936,6 +938,7 @@
 		FC13A9EC16B48DAA00394086 /* Effects */ = {
 			isa = PBXGroup;
 			children = (
+				FC13A9FE16B4927800394086 /* Heartbeat-Tap.caf */,
 				FC13A9ED16B48DAA00394086 /* EggDeath.caf */,
 				FC13A9EE16B48DAA00394086 /* EvilLaugh1.caf */,
 				FC13A9EF16B48DAA00394086 /* EvilLaugh2.caf */,
@@ -1024,6 +1027,7 @@
 				FC13A9F816B48DAA00394086 /* PumpingUp.caf in Resources */,
 				FC13A9F916B48DAA00394086 /* ScrambleYou.caf in Resources */,
 				FC13A9FA16B48DAA00394086 /* TasteMyBacon.caf in Resources */,
+				FC13A9FF16B4927800394086 /* Heartbeat-Tap.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
