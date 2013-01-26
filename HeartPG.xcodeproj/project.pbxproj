@@ -136,6 +136,7 @@
 		FC13A9B816B43B4D00394086 /* CombatScene.m in Sources */ = {isa = PBXBuildFile; fileRef = FC13A9B716B43B4D00394086 /* CombatScene.m */; };
 		FC13A9BC16B43D0E00394086 /* HeartCharacterLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FC13A9BB16B43D0E00394086 /* HeartCharacterLayer.m */; };
 		FC13A9C216B43E9500394086 /* EnemyCharacterLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FC13A9C116B43E9500394086 /* EnemyCharacterLayer.m */; };
+		FC13A9C416B4425000394086 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC13A9C316B4424F00394086 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -407,6 +408,7 @@
 		FC13A9BB16B43D0E00394086 /* HeartCharacterLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeartCharacterLayer.m; sourceTree = "<group>"; };
 		FC13A9C016B43E9500394086 /* EnemyCharacterLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnemyCharacterLayer.h; sourceTree = "<group>"; };
 		FC13A9C116B43E9500394086 /* EnemyCharacterLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnemyCharacterLayer.m; sourceTree = "<group>"; };
+		FC13A9C316B4424F00394086 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -432,6 +434,7 @@
 		FC13A80B16B4375F00394086 = {
 			isa = PBXGroup;
 			children = (
+				FC13A9C316B4424F00394086 /* Default-568h@2x.png */,
 				FC13A82C16B4375F00394086 /* HeartPG */,
 				FC13A81916B4375F00394086 /* Frameworks */,
 				FC13A81716B4375F00394086 /* Products */,
@@ -910,6 +913,7 @@
 				FC13A84316B4375F00394086 /* Icon@2x.png in Resources */,
 				FC13A84616B4375F00394086 /* iTunesArtwork in Resources */,
 				FC13A98416B4376300394086 /* ChangeLog in Resources */,
+				FC13A9C416B4425000394086 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
