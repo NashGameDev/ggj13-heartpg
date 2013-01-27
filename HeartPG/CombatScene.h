@@ -12,6 +12,7 @@
 #import "EnemyCharacterLayer.h"
 
 typedef enum {
+    kGameStarting,
     kGameBattle,
     kGameTransition
     

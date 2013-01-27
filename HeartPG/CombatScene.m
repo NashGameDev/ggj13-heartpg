@@ -16,7 +16,7 @@
 -(id) init
 {
 	if( (self=[super init]) ) {
-
+        self.state = kGameStarting;
         self.heartLayer = [HeartCharacterLayer node];
         self.heartLayer.position = ccp(self.contentSize.width/4, self.contentSize.height/2.0);
         [self addChild:self.heartLayer];
@@ -24,8 +24,7 @@
         [self addEnemy:[EggmanLayer node]];
         
         // start playing the background music
-        [SimpleAudioEngine sharedEngine].backgroundMusicVolume = 0.3;
-        
+        [SimpleAudioEngine sharedEngine].backgroundMusicVolume = 0.3;        
         [self setupGestures];
 	}
     
@@ -80,8 +79,11 @@
 
 -(void) doTransitionToNextEnemy {
     self.state = kGameTransition;
+    [[SimpleAudioEngine sharedEngine] preloadEffect:kArtificialMalfunctioning];
+    [[SimpleAudioEngine sharedEngine] stopEffect:self.heartLayer.heart.currentPumpEffect];
     [[SimpleAudioEngine sharedEngine] stopBackgroundMusic];
-    [[SimpleAudioEngine sharedEngine] playEffect:kBattleThemeWin];
+    [self.enemyLayer playDyingEffect];
+    [[SimpleAudioEngine sharedEngine] playEffect:kBattleThemeWin pitch:1.0f pan:0.0f gain:0.1f];
     [self.enemyLayer.enemyGraphic runAction:[CCMoveBy actionWithDuration:0.3 position:ccp(self.enemyLayer.enemyGraphic.position.x, -self.contentSize.height*2)]];
 
     [self scheduleOnce:@selector(completeTransitionToNextEnemy) delay:4.8];
