@@ -158,13 +158,15 @@
         <key>fileList</key>
         <array>
             <filename>background-small.png</filename>
-            <filename>Enemy-ArtificialHeart.png</filename>
             <filename>Enemy-Hamburger.png</filename>
             <filename>heartbot.png</filename>
             <filename>baconegg.png</filename>
             <filename>heartman.png</filename>
             <filename>heartman2.png</filename>
             <filename>pumped.png</filename>
+            <filename>pump.png</filename>
+            <filename>bloodbag.png</filename>
+            <filename>bloodbag2.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

@@ -131,6 +131,8 @@
 - (void)handleTapGesture:(UITapGestureRecognizer*)recognizer {
     if (self.state != kGameBattle) return;
     [self.heartLayer.heart pump:kBasicPump];
+    [self.heartLayer.pump stopAllActions];
+    [self.heartLayer.pump runAction:[CCSequence actionOne:[CCScaleTo actionWithDuration:0.1 scale:0.8] two:[CCScaleTo actionWithDuration:0.1 scale:1.0]] ];
 }
 
 

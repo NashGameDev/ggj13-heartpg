@@ -15,4 +15,7 @@
 @property(strong, nonatomic) HeartNode* heart;
 @property(strong, nonatomic) CCSprite* pump;
 
+@property(strong, nonatomic) CCSprite* bagtop;
+@property(strong, nonatomic) CCSprite* bagbottom;
+
 @end

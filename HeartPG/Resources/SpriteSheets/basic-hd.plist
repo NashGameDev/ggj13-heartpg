@@ -4,27 +4,14 @@
     <dict>
         <key>frames</key>
         <dict>
-            <key>Enemy-ArtificialHeart.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{1606,2},{259,239}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{259,239}}</string>
-                <key>sourceSize</key>
-                <string>{259,239}</string>
-            </dict>
             <key>Enemy-Hamburger.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1606,243},{257,195}}</string>
+                <string>{{1344,1179},{257,195}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{0,0},{257,195}}</string>
                 <key>sourceSize</key>
@@ -33,7 +20,7 @@
             <key>background-small.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1867,2},{42,640}}</string>
+                <string>{{1543,452},{42,640}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -56,6 +43,32 @@
                 <key>sourceSize</key>
                 <string>{800,706}</string>
             </dict>
+            <key>bloodbag.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{1587,663},{400,659}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{400,659}}</string>
+                <key>sourceSize</key>
+                <string>{400,659}</string>
+            </dict>
+            <key>bloodbag2.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{1606,2},{400,659}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{400,659}}</string>
+                <key>sourceSize</key>
+                <string>{400,659}</string>
+            </dict>
             <key>heartbot.png</key>
             <dict>
                 <key>frame</key>
@@ -72,7 +85,7 @@
             <key>heartman.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{726,1179},{669,722}}</string>
+                <string>{{673,1324},{669,722}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -85,15 +98,28 @@
             <key>heartman2.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,710},{669,722}}</string>
+                <string>{{2,1324},{669,722}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <true/>
+                <false/>
                 <key>sourceColorRect</key>
                 <string>{{0,0},{669,722}}</string>
                 <key>sourceSize</key>
                 <string>{669,722}</string>
+            </dict>
+            <key>pump.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{1541,1324},{400,159}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{400,159}}</string>
+                <key>sourceSize</key>
+                <string>{400,159}</string>
             </dict>
             <key>pumped.png</key>
             <dict>
@@ -118,7 +144,7 @@
             <key>size</key>
             <string>{2048,2048}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:895ee4096e40e99137573be82ce9f780$</string>
+            <string>$TexturePacker:SmartUpdate:9e073dbeec07c68ff603d3884bade802$</string>
             <key>textureFileName</key>
             <string>basic-hd.pvr.ccz</string>
         </dict>

@@ -4,27 +4,14 @@
     <dict>
         <key>frames</key>
         <dict>
-            <key>Enemy-ArtificialHeart.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{806,2},{130,120}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{130,120}}</string>
-                <key>sourceSize</key>
-                <string>{130,120}</string>
-            </dict>
             <key>Enemy-Hamburger.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{806,124},{129,98}}</string>
+                <string>{{728,748},{129,98}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{0,0},{129,98}}</string>
                 <key>sourceSize</key>
@@ -33,7 +20,7 @@
             <key>background-small.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{938,2},{21,320}}</string>
+                <string>{{775,228},{21,320}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -56,6 +43,32 @@
                 <key>sourceSize</key>
                 <string>{400,353}</string>
             </dict>
+            <key>bloodbag.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{798,334},{200,330}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{200,330}}</string>
+                <key>sourceSize</key>
+                <string>{200,330}</string>
+            </dict>
+            <key>bloodbag2.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{806,2},{200,330}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{200,330}}</string>
+                <key>sourceSize</key>
+                <string>{200,330}</string>
+            </dict>
             <key>heartbot.png</key>
             <dict>
                 <key>frame</key>
@@ -72,20 +85,7 @@
             <key>heartman.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{365,593},{335,361}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{335,361}}</string>
-                <key>sourceSize</key>
-                <string>{335,361}</string>
-            </dict>
-            <key>heartman2.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{2,357},{335,361}}</string>
+                <string>{{365,666},{335,361}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -94,6 +94,32 @@
                 <string>{{0,0},{335,361}}</string>
                 <key>sourceSize</key>
                 <string>{335,361}</string>
+            </dict>
+            <key>heartman2.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,666},{335,361}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{335,361}}</string>
+                <key>sourceSize</key>
+                <string>{335,361}</string>
+            </dict>
+            <key>pump.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{728,666},{200,80}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{200,80}}</string>
+                <key>sourceSize</key>
+                <string>{200,80}</string>
             </dict>
             <key>pumped.png</key>
             <dict>
@@ -118,7 +144,7 @@
             <key>size</key>
             <string>{1024,1024}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:1b48c3f2bec0c62fd837267f73918746$</string>
+            <string>$TexturePacker:SmartUpdate:cadd745f5331405bf34bccb15b1cdd2a$</string>
             <key>textureFileName</key>
             <string>basic.pvr.ccz</string>
         </dict>
