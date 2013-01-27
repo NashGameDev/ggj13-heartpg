@@ -25,4 +25,6 @@
 -(void) playDyingEffect;
 -(void) playStartingEffect;
 
+-(void) playHitEffect;
+
 @end

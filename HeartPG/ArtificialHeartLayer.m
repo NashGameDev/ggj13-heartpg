@@ -23,4 +23,18 @@
     [[SimpleAudioEngine sharedEngine] playEffect:kArtificialReplacement];
 }
 
+-(void) playHitEffect {
+
+    switch(arc4random() % 3) {
+        case 0:
+            [[SimpleAudioEngine sharedEngine] playEffect:kArtificial123456];
+            break;
+        case 1:
+            [[SimpleAudioEngine sharedEngine] playEffect:kArtificialOperational];
+            break;
+        case 2:
+            [[SimpleAudioEngine sharedEngine] playEffect:kArtificialTermination];
+            break;
+    }
+}
 @end
