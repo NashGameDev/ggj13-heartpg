@@ -13,11 +13,28 @@
 -(id) init
 {
 	if( (self=[super init]) ) {
-        CCSprite* sprite = [CCSprite spriteWithSpriteFrameName:@"baconegg.png"];
-        [self addChild:sprite];
+        self.enemyGraphic = [CCSprite spriteWithSpriteFrameName:@"baconegg.png"];
+        [self addChild:self.enemyGraphic];
 	}
     
 	return self;
 }
+
+-(void) hitSide {
+    self.enemyGraphic.scale /= 2.0;
+    
+    CCParticleExplosion* particle = [CCParticleExplosion node];
+    particle.speed = 800.0;
+    particle.life = 0.5;
+    particle.lifeVar = 0.1;
+    particle.position = ccp(0,0);
+    [self addChild:particle];
+
+}
+
+-(void) hitUp {
+    
+}
+
 
 @end

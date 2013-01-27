@@ -41,6 +41,17 @@
     UIGestureRecognizer *panGestureRecognizer2 = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePanGesture:)];
     panGestureRecognizer2.delegate = self;
     [self.heartLayer.pump addGestureRecognizer:panGestureRecognizer2];
+    
+    
+    UISwipeGestureRecognizer *swipeLeftRight = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipeSide:)];
+    [swipeLeftRight setDirection:(UISwipeGestureRecognizerDirectionRight | UISwipeGestureRecognizerDirectionLeft )];
+    [self addGestureRecognizer:swipeLeftRight];
+    
+    UISwipeGestureRecognizer *swipeUpDown = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipeUpDown:)];
+    [swipeUpDown setDirection:(UISwipeGestureRecognizerDirectionUp | UISwipeGestureRecognizerDirectionDown )];
+    [self addGestureRecognizer:swipeUpDown];
+
+    
 }
 
 
@@ -49,6 +60,17 @@
 {
     return YES;
 }
+
+- (void)handleSwipeSide:(UISwipeGestureRecognizer*)recognizer
+{
+    [self.enemyLayer hitSide];
+}
+
+- (void)handleSwipeUpDown:(UISwipeGestureRecognizer*)recognizer
+{
+    
+}
+
 
 - (void)handlePanGesture:(UIPanGestureRecognizer*)aPanGestureRecognizer
 {

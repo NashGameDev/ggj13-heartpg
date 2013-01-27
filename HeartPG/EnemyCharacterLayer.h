@@ -13,4 +13,9 @@
     
 }
 
+@property (strong, nonatomic) CCSprite* enemyGraphic;
+
+-(void) hitSide;
+-(void) hitUp;
+
 @end

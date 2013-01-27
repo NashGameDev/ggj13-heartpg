@@ -19,6 +19,7 @@
 @property(assign, nonatomic) NSInteger pumpLevel;
 @property(assign, nonatomic) BOOL superPump;
 @property(assign, nonatomic) ALuint currentPumpEffect;
+@property(strong, nonatomic) CCParticleSystemQuad* particle;
 
 -(void) pump:(NSInteger)amount;
 -(void) deflate:(NSInteger)amount;
