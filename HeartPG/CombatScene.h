@@ -14,7 +14,8 @@
 typedef enum {
     kGameStarting,
     kGameBattle,
-    kGameTransition
+    kGameTransition,
+    kGameEnd
     
 } GameState;
 

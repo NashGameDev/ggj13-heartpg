@@ -32,6 +32,8 @@
         // start playing the background music
         [SimpleAudioEngine sharedEngine].backgroundMusicVolume = 0.3;        
         [self setupGestures];
+        
+        [self schedule:@selector(enemyHit) interval:3.0];
 	}
     
 	return self;
@@ -40,6 +42,7 @@
 -(void) startBattle {
     self.state = kGameBattle;
     [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"BattleTheme1-Loop.mp3" loop:YES];
+    self.heartLayer.health = 100;
 }
 
 -(void) addEnemy:(EnemyCharacterLayer*)enemy {
@@ -64,8 +67,6 @@
     UISwipeGestureRecognizer *swipeUpDown = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipeUpDown:)];
     [swipeUpDown setDirection:(UISwipeGestureRecognizerDirectionUp | UISwipeGestureRecognizerDirectionDown )];
     [self addGestureRecognizer:swipeUpDown];
-
-    
 }
 
 
@@ -106,6 +107,20 @@
     if (self.enemyLayer.health <= 0) {
         [self doTransitionToNextEnemy];        
     }
+}
+
+-(void) enemyHit {
+    if (self.state != kGameBattle) return;
+    self.heartLayer.health -= 15;
+    [self.enemyLayer playHitEffect];
+    
+    if (self.heartLayer.health <= 0) {
+        self.state = kGameEnd;
+        [[SimpleAudioEngine sharedEngine] stopBackgroundMusic];
+        [[SimpleAudioEngine sharedEngine] playEffect:kPlayerDeath];
+        [self.heartLayer.heart runAction:[CCRepeatForever actionWithAction:[CCRotateBy actionWithDuration:0.2 angle:360.0]]];
+    }
+    
 }
 
 - (void)handleSwipeUpDown:(UISwipeGestureRecognizer*)recognizer

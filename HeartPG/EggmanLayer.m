@@ -24,5 +24,19 @@
     [[SimpleAudioEngine sharedEngine] playEffect:kEggScrambleYou];
 }
 
+-(void) playHitEffect {
+    switch(arc4random() % 3) {
+        case 0:
+            [[SimpleAudioEngine sharedEngine] playEffect:kEggBacon];
+            break;
+        case 1:
+            [[SimpleAudioEngine sharedEngine] playEffect:kEggEvilLaugh];
+            break;
+        case 2:
+            [[SimpleAudioEngine sharedEngine] playEffect:kEggEvilLaugh2];
+            break;
+    }
+}
+
 
 @end

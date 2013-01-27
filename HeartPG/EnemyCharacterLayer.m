@@ -62,5 +62,8 @@
     
 }
 
+-(void) playHitEffect {
+    
+}
 
 @end
