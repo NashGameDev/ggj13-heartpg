@@ -14,8 +14,12 @@
 }
 
 @property (strong, nonatomic) CCSprite* enemyGraphic;
+@property (assign, nonatomic) NSInteger health;
 
--(void) hitSide;
--(void) hitUp;
+
+-(NSString*) characterFrameName;
+
+-(void) hitSide:(NSInteger)characterPower;
+-(void) hitUp:(NSInteger)characterPower;
 
 @end

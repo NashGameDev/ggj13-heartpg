@@ -11,6 +11,8 @@
 
 @implementation SoundEffects
 
+
+NSString * const kAttachGenericHit = @"AttachGenericHit.caf";
 NSString * const kEggDeath = @"EggDeath.caf";
 NSString * const kEvilLaugh1 = @"EvilLaugh1.caf";
 NSString * const kEvilLaugh2 = @"EvilLaugh2.caf";

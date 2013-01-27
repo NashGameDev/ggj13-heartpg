@@ -8,6 +8,8 @@
 
 #import "CombatScene.h"
 #import "SimpleAudioEngine.h"
+#import "EggmanLayer.h"
+#import "ArtificialHeartLayer.h"
 
 @implementation CombatScene
 
@@ -19,18 +21,23 @@
         self.heartLayer.position = ccp(self.contentSize.width/4, self.contentSize.height/2.0);
         [self addChild:self.heartLayer];
         
-        self.enemyLayer = [EnemyCharacterLayer node];
-        self.enemyLayer.position = ccp(self.contentSize.width/4 * 3, self.contentSize.height/2.0);
-        [self addChild:self.enemyLayer];
+        [self addEnemy:[EggmanLayer node]];
         
         // start playing the background music
         [SimpleAudioEngine sharedEngine].backgroundMusicVolume = 0.3;
-//        [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"BattleTheme1-Loop.mp3" loop:YES];
+        [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"BattleTheme1-Loop.mp3" loop:YES];
         
         [self setupGestures];
 	}
     
 	return self;
+}
+
+-(void) addEnemy:(EnemyCharacterLayer*)enemy {
+    [self.enemyLayer removeFromParentAndCleanup:YES];
+    self.enemyLayer = enemy;
+    self.enemyLayer.position = ccp(self.contentSize.width/4 * 3, self.contentSize.height/2.0);
+    [self addChild:self.enemyLayer];    
 }
 
 -(void) setupGestures {
@@ -63,7 +70,18 @@
 
 - (void)handleSwipeSide:(UISwipeGestureRecognizer*)recognizer
 {
-    [self.enemyLayer hitSide];
+    [self.enemyLayer hitSide:self.heartLayer.heart.pumpLevel];
+    
+    // detect death
+    if (self.enemyLayer.health <= 0) {
+        if ([self.enemyLayer isKindOfClass:[EggmanLayer class]]) {
+            [self addEnemy:[ArtificialHeartLayer node]];
+        } else {
+            [self.enemyLayer removeFromParentAndCleanup:YES];
+//            [[SimpleAudioEngine sharedEngine] playEffect:]
+        }
+        
+    }
 }
 
 - (void)handleSwipeUpDown:(UISwipeGestureRecognizer*)recognizer

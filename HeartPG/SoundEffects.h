@@ -8,7 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
+#import "SimpleAudioEngine.h"
 
+FOUNDATION_EXPORT NSString * const kAttachGenericHit;
+FOUNDATION_EXPORT NSString * const kPumping2Bleeps;
+FOUNDATION_EXPORT NSString * const kPumping2Bleeps;
 FOUNDATION_EXPORT NSString * const kEggDeath;
 FOUNDATION_EXPORT NSString * const kEvilLaugh1;
 FOUNDATION_EXPORT NSString * const kEvilLaugh2;

@@ -160,6 +160,11 @@
 		FC13AA0C16B498FC00394086 /* Pumping-1Bleep.caf in Resources */ = {isa = PBXBuildFile; fileRef = FC13AA0716B498FB00394086 /* Pumping-1Bleep.caf */; };
 		FC13AA0D16B498FC00394086 /* Pumping-2Bleeps.caf in Resources */ = {isa = PBXBuildFile; fileRef = FC13AA0816B498FB00394086 /* Pumping-2Bleeps.caf */; };
 		FC13AA0F16B4A24F00394086 /* fire.png in Resources */ = {isa = PBXBuildFile; fileRef = FC13AA0E16B4A24F00394086 /* fire.png */; };
+		FC13AA1316B4A60700394086 /* AttackGenericHit.caf in Resources */ = {isa = PBXBuildFile; fileRef = FC13AA1016B4A60500394086 /* AttackGenericHit.caf */; };
+		FC13AA1416B4A60700394086 /* PlayerAttack1.caf in Resources */ = {isa = PBXBuildFile; fileRef = FC13AA1116B4A60600394086 /* PlayerAttack1.caf */; };
+		FC13AA1516B4A60700394086 /* PlayerAttack2.caf in Resources */ = {isa = PBXBuildFile; fileRef = FC13AA1216B4A60600394086 /* PlayerAttack2.caf */; };
+		FC13AA1816B4AD7900394086 /* EggmanLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FC13AA1716B4AD7700394086 /* EggmanLayer.m */; };
+		FC13AA1B16B4AE8500394086 /* ArtificialHeartLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FC13AA1A16B4AE8300394086 /* ArtificialHeartLayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -459,6 +464,13 @@
 		FC13AA0716B498FB00394086 /* Pumping-1Bleep.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pumping-1Bleep.caf"; sourceTree = "<group>"; };
 		FC13AA0816B498FB00394086 /* Pumping-2Bleeps.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pumping-2Bleeps.caf"; sourceTree = "<group>"; };
 		FC13AA0E16B4A24F00394086 /* fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fire.png; path = Resources/fire.png; sourceTree = "<group>"; };
+		FC13AA1016B4A60500394086 /* AttackGenericHit.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AttackGenericHit.caf; sourceTree = "<group>"; };
+		FC13AA1116B4A60600394086 /* PlayerAttack1.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PlayerAttack1.caf; sourceTree = "<group>"; };
+		FC13AA1216B4A60600394086 /* PlayerAttack2.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PlayerAttack2.caf; sourceTree = "<group>"; };
+		FC13AA1616B4AD7600394086 /* EggmanLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EggmanLayer.h; sourceTree = "<group>"; };
+		FC13AA1716B4AD7700394086 /* EggmanLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EggmanLayer.m; sourceTree = "<group>"; };
+		FC13AA1916B4AE8100394086 /* ArtificialHeartLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtificialHeartLayer.h; sourceTree = "<group>"; };
+		FC13AA1A16B4AE8300394086 /* ArtificialHeartLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtificialHeartLayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -537,6 +549,10 @@
 				FC13A9CF16B4506900394086 /* HeartNode.m */,
 				FC13A9FB16B4901500394086 /* SoundEffects.h */,
 				FC13A9FC16B4901700394086 /* SoundEffects.m */,
+				FC13AA1616B4AD7600394086 /* EggmanLayer.h */,
+				FC13AA1716B4AD7700394086 /* EggmanLayer.m */,
+				FC13AA1916B4AE8100394086 /* ArtificialHeartLayer.h */,
+				FC13AA1A16B4AE8300394086 /* ArtificialHeartLayer.m */,
 				FC13A82D16B4375F00394086 /* Resources */,
 				FC13A84716B4375F00394086 /* libs */,
 				FC13A9A016B4376400394086 /* Supporting Files */,
@@ -951,6 +967,9 @@
 		FC13A9EC16B48DAA00394086 /* Effects */ = {
 			isa = PBXGroup;
 			children = (
+				FC13AA1016B4A60500394086 /* AttackGenericHit.caf */,
+				FC13AA1116B4A60600394086 /* PlayerAttack1.caf */,
+				FC13AA1216B4A60600394086 /* PlayerAttack2.caf */,
 				FC13AA0416B498FA00394086 /* BattleTheme-Lose.caf */,
 				FC13AA0516B498FA00394086 /* BattleTheme-Win.caf */,
 				FC13AA0616B498FB00394086 /* EnemyAttack1.caf */,
@@ -1052,6 +1071,9 @@
 				FC13AA0C16B498FC00394086 /* Pumping-1Bleep.caf in Resources */,
 				FC13AA0D16B498FC00394086 /* Pumping-2Bleeps.caf in Resources */,
 				FC13AA0F16B4A24F00394086 /* fire.png in Resources */,
+				FC13AA1316B4A60700394086 /* AttackGenericHit.caf in Resources */,
+				FC13AA1416B4A60700394086 /* PlayerAttack1.caf in Resources */,
+				FC13AA1516B4A60700394086 /* PlayerAttack2.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1172,6 +1194,8 @@
 				FC13A9D016B4506900394086 /* HeartNode.m in Sources */,
 				FC13A9DE16B46DD100394086 /* CCNode+SFGestureRecognizers.m in Sources */,
 				FC13A9FD16B4901900394086 /* SoundEffects.m in Sources */,
+				FC13AA1816B4AD7900394086 /* EggmanLayer.m in Sources */,
+				FC13AA1B16B4AE8500394086 /* ArtificialHeartLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
