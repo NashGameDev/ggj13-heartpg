@@ -22,4 +22,7 @@
 -(void) hitSide:(NSInteger)characterPower;
 -(void) hitUp:(NSInteger)characterPower;
 
+-(void) playDyingEffect;
+-(void) playStartingEffect;
+
 @end

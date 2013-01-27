@@ -16,6 +16,11 @@
 NSString * const kAttackGenericHit = @"AttackGenericHit.caf";
 NSString * const kBattleThemeLose = @"BattleTheme-Lose.caf";
 NSString * const kBattleThemeWin = @"BattleTheme-Win.caf";
+NSString * const kArtificial123456 = @"Artificial-123456.caf";
+NSString * const kArtificialMalfunctioning = @"Artificial-Malfunctioning.caf";
+NSString * const kArtificialOperational = @"Artificial-Operational.caf";
+NSString * const kArtificialReplacement = @"Artificial-Replacement.caf";
+NSString * const kArtificialTermination = @"Artificial-Termination.caf";
 NSString * const kEggBacon = @"Egg-Bacon.caf";
 NSString * const kEggDeath = @"Egg-Death.caf";
 NSString * const kEggEvilLaugh = @"Egg-EvilLaugh.caf";
@@ -39,7 +44,7 @@ NSString * const kPumpingUp = @"PumpingUp.caf";
 
 +(void) preload {
     SimpleAudioEngine *engine = [SimpleAudioEngine sharedEngine];
-    NSArray* allSounds = @[kAttackGenericHit, kBattleThemeLose, kBattleThemeWin, kEggBacon, kEggDeath, kEggEvilLaugh, kEggEvilLaugh2, kEggScrambleYou, kEnemyAttack1, kHeartbeatTap, kPlayerDeath, kPlayerEffortsInVein, kPlayerKarate1, kPlayerKarate2, kPlayerWhyAorta, kPlayerAttack1Hit, kPlayerAttack1Launch, kPlayerAttack2, kPumping1Bleep, kPumping2Bleeps, kPumpingUpAlternate, kPumpingUp];
+    NSArray* allSounds = @[kAttackGenericHit, kBattleThemeLose, kBattleThemeWin, kArtificial123456, kArtificialMalfunctioning, kArtificialOperational, kArtificialReplacement, kArtificialTermination, kEggBacon, kEggDeath, kEggEvilLaugh, kEggEvilLaugh2, kEggScrambleYou, kEnemyAttack1, kHeartbeatTap, kPlayerDeath, kPlayerEffortsInVein, kPlayerKarate1, kPlayerKarate2, kPlayerWhyAorta, kPlayerAttack1Hit, kPlayerAttack1Launch, kPlayerAttack2, kPumping1Bleep, kPumping2Bleeps, kPumpingUpAlternate, kPumpingUp];
 
     for( NSString* effect in allSounds) {
         [engine preloadEffect:effect];

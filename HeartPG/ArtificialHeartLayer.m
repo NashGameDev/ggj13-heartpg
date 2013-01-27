@@ -7,12 +7,20 @@
 //
 
 #import "ArtificialHeartLayer.h"
-
+#import "SoundEffects.h"
 
 @implementation ArtificialHeartLayer
 
 -(NSString*) characterFrameName {
     return @"heartbot.png";
+}
+
+-(void) playDyingEffect {
+    [[SimpleAudioEngine sharedEngine] playEffect:kArtificialMalfunctioning];
+}
+
+-(void) playStartingEffect {
+    [[SimpleAudioEngine sharedEngine] playEffect:kArtificialReplacement];
 }
 
 @end

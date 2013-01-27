@@ -32,13 +32,18 @@
 	return self;
 }
 
+-(void) startBattle {
+    self.state = kGameBattle;
+    [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"BattleTheme1-Loop.mp3" loop:YES];
+}
+
 -(void) addEnemy:(EnemyCharacterLayer*)enemy {
     [self.enemyLayer removeFromParentAndCleanup:YES];
     self.enemyLayer = enemy;
     self.enemyLayer.position = ccp(self.contentSize.width/4 * 3, self.contentSize.height/2.0);
     [self addChild:self.enemyLayer];
-    [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"BattleTheme1-Loop.mp3" loop:YES];
-    self.state = kGameBattle;
+    [self.enemyLayer playStartingEffect];
+    [self scheduleOnce:@selector(startBattle) delay:2.8];
 }
 
 -(void) setupGestures {

@@ -54,4 +54,13 @@
     return nil;
 }
 
+-(void) playDyingEffect {
+    
+}
+
+-(void) playStartingEffect {
+    
+}
+
+
 @end

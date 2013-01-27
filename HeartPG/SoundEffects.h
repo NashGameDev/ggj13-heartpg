@@ -15,11 +15,16 @@
 FOUNDATION_EXPORT NSString * const kAttackGenericHit;
 FOUNDATION_EXPORT NSString * const kBattleThemeLose;
 FOUNDATION_EXPORT NSString * const kBattleThemeWin;
+FOUNDATION_EXPORT NSString * const kArtificial123456;
+FOUNDATION_EXPORT NSString * const kArtificialMalfunctioning;  // dying sound   2.25
+FOUNDATION_EXPORT NSString * const kArtificialOperational;
+FOUNDATION_EXPORT NSString * const kArtificialReplacement;     // starting sound  2.5
+FOUNDATION_EXPORT NSString * const kArtificialTermination;
 FOUNDATION_EXPORT NSString * const kEggBacon;
-FOUNDATION_EXPORT NSString * const kEggDeath;
+FOUNDATION_EXPORT NSString * const kEggDeath;                   // dying sound    2.5
 FOUNDATION_EXPORT NSString * const kEggEvilLaugh;
 FOUNDATION_EXPORT NSString * const kEggEvilLaugh2;
-FOUNDATION_EXPORT NSString * const kEggScrambleYou;
+FOUNDATION_EXPORT NSString * const kEggScrambleYou;             // starting sound  2.0
 FOUNDATION_EXPORT NSString * const kEnemyAttack1;
 FOUNDATION_EXPORT NSString * const kHeartbeatTap;
 FOUNDATION_EXPORT NSString * const kPlayerDeath;

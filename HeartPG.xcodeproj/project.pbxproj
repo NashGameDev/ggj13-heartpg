@@ -171,6 +171,11 @@
 		FC13AA3816B4B22B00394086 /* Player-WhyAorta.caf in Resources */ = {isa = PBXBuildFile; fileRef = FC13AA2C16B4B22B00394086 /* Player-WhyAorta.caf */; };
 		FC13AA3916B4B22B00394086 /* PlayerAttack1Hit.caf in Resources */ = {isa = PBXBuildFile; fileRef = FC13AA2D16B4B22B00394086 /* PlayerAttack1Hit.caf */; };
 		FC13AA3A16B4B22B00394086 /* PlayerAttack1Launch.caf in Resources */ = {isa = PBXBuildFile; fileRef = FC13AA2E16B4B22B00394086 /* PlayerAttack1Launch.caf */; };
+		FC13AA4016B4D78200394086 /* Artificial-123456.caf in Resources */ = {isa = PBXBuildFile; fileRef = FC13AA3B16B4D78100394086 /* Artificial-123456.caf */; };
+		FC13AA4116B4D78200394086 /* Artificial-Malfunctioning.caf in Resources */ = {isa = PBXBuildFile; fileRef = FC13AA3C16B4D78100394086 /* Artificial-Malfunctioning.caf */; };
+		FC13AA4216B4D78200394086 /* Artificial-Operational.caf in Resources */ = {isa = PBXBuildFile; fileRef = FC13AA3D16B4D78100394086 /* Artificial-Operational.caf */; };
+		FC13AA4316B4D78200394086 /* Artificial-Replacement.caf in Resources */ = {isa = PBXBuildFile; fileRef = FC13AA3E16B4D78100394086 /* Artificial-Replacement.caf */; };
+		FC13AA4416B4D78200394086 /* Artificial-Termination.caf in Resources */ = {isa = PBXBuildFile; fileRef = FC13AA3F16B4D78200394086 /* Artificial-Termination.caf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -483,6 +488,11 @@
 		FC13AA2C16B4B22B00394086 /* Player-WhyAorta.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Player-WhyAorta.caf"; sourceTree = "<group>"; };
 		FC13AA2D16B4B22B00394086 /* PlayerAttack1Hit.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PlayerAttack1Hit.caf; sourceTree = "<group>"; };
 		FC13AA2E16B4B22B00394086 /* PlayerAttack1Launch.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PlayerAttack1Launch.caf; sourceTree = "<group>"; };
+		FC13AA3B16B4D78100394086 /* Artificial-123456.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Artificial-123456.caf"; sourceTree = "<group>"; };
+		FC13AA3C16B4D78100394086 /* Artificial-Malfunctioning.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Artificial-Malfunctioning.caf"; sourceTree = "<group>"; };
+		FC13AA3D16B4D78100394086 /* Artificial-Operational.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Artificial-Operational.caf"; sourceTree = "<group>"; };
+		FC13AA3E16B4D78100394086 /* Artificial-Replacement.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Artificial-Replacement.caf"; sourceTree = "<group>"; };
+		FC13AA3F16B4D78200394086 /* Artificial-Termination.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Artificial-Termination.caf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1000,6 +1010,11 @@
 		FC13AA2116B4B22B00394086 /* Enemies */ = {
 			isa = PBXGroup;
 			children = (
+				FC13AA3B16B4D78100394086 /* Artificial-123456.caf */,
+				FC13AA3C16B4D78100394086 /* Artificial-Malfunctioning.caf */,
+				FC13AA3D16B4D78100394086 /* Artificial-Operational.caf */,
+				FC13AA3E16B4D78100394086 /* Artificial-Replacement.caf */,
+				FC13AA3F16B4D78200394086 /* Artificial-Termination.caf */,
 				FC13AA2216B4B22B00394086 /* Egg-Bacon.caf */,
 				FC13AA2316B4B22B00394086 /* Egg-Death.caf */,
 				FC13AA2416B4B22B00394086 /* Egg-EvilLaugh.caf */,
@@ -1114,6 +1129,11 @@
 				FC13AA3816B4B22B00394086 /* Player-WhyAorta.caf in Resources */,
 				FC13AA3916B4B22B00394086 /* PlayerAttack1Hit.caf in Resources */,
 				FC13AA3A16B4B22B00394086 /* PlayerAttack1Launch.caf in Resources */,
+				FC13AA4016B4D78200394086 /* Artificial-123456.caf in Resources */,
+				FC13AA4116B4D78200394086 /* Artificial-Malfunctioning.caf in Resources */,
+				FC13AA4216B4D78200394086 /* Artificial-Operational.caf in Resources */,
+				FC13AA4316B4D78200394086 /* Artificial-Replacement.caf in Resources */,
+				FC13AA4416B4D78200394086 /* Artificial-Termination.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

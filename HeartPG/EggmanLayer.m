@@ -7,7 +7,7 @@
 //
 
 #import "EggmanLayer.h"
-
+#import "SoundEffects.h"
 
 @implementation EggmanLayer
 
@@ -15,5 +15,14 @@
 -(NSString*) characterFrameName {
     return @"baconegg.png";
 }
+
+-(void) playDyingEffect {
+    [[SimpleAudioEngine sharedEngine] playEffect:kEggDeath];
+}
+
+-(void) playStartingEffect {
+    [[SimpleAudioEngine sharedEngine] playEffect:kEggScrambleYou];
+}
+
 
 @end
