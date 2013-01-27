@@ -16,6 +16,12 @@
 -(id) init
 {
 	if( (self=[super init]) ) {
+        CCSprite* background = [CCSprite spriteWithSpriteFrameName:@"background-small.png"];
+        background.scaleX = self.contentSize.width / background.contentSize.width;
+        background.scaleY = self.contentSize.height / background.contentSize.height;
+        background.anchorPoint = ccp(0, 0);
+        [self addChild:background];
+        
         self.state = kGameStarting;
         self.heartLayer = [HeartCharacterLayer node];
         self.heartLayer.position = ccp(self.contentSize.width/4, self.contentSize.height/2.0);

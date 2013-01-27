@@ -176,6 +176,7 @@
 		FC13AA4216B4D78200394086 /* Artificial-Operational.caf in Resources */ = {isa = PBXBuildFile; fileRef = FC13AA3D16B4D78100394086 /* Artificial-Operational.caf */; };
 		FC13AA4316B4D78200394086 /* Artificial-Replacement.caf in Resources */ = {isa = PBXBuildFile; fileRef = FC13AA3E16B4D78100394086 /* Artificial-Replacement.caf */; };
 		FC13AA4416B4D78200394086 /* Artificial-Termination.caf in Resources */ = {isa = PBXBuildFile; fileRef = FC13AA3F16B4D78200394086 /* Artificial-Termination.caf */; };
+		FC13AA4616B4DFC100394086 /* splashscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = FC13AA4516B4DFC100394086 /* splashscreen.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -493,6 +494,7 @@
 		FC13AA3D16B4D78100394086 /* Artificial-Operational.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Artificial-Operational.caf"; sourceTree = "<group>"; };
 		FC13AA3E16B4D78100394086 /* Artificial-Replacement.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Artificial-Replacement.caf"; sourceTree = "<group>"; };
 		FC13AA3F16B4D78200394086 /* Artificial-Termination.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Artificial-Termination.caf"; sourceTree = "<group>"; };
+		FC13AA4516B4DFC100394086 /* splashscreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = splashscreen.png; path = Assets/splashscreen.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -585,6 +587,7 @@
 		FC13A82D16B4375F00394086 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				FC13AA4516B4DFC100394086 /* splashscreen.png */,
 				FC13AA0E16B4A24F00394086 /* fire.png */,
 				FC13A82E16B4375F00394086 /* Default.png */,
 				FC13A83016B4375F00394086 /* Default-Landscape~ipad.png */,
@@ -1134,6 +1137,7 @@
 				FC13AA4216B4D78200394086 /* Artificial-Operational.caf in Resources */,
 				FC13AA4316B4D78200394086 /* Artificial-Replacement.caf in Resources */,
 				FC13AA4416B4D78200394086 /* Artificial-Termination.caf in Resources */,
+				FC13AA4616B4DFC100394086 /* splashscreen.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
