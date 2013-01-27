@@ -145,13 +145,8 @@
 		FC13A9E316B476B800394086 /* BattleTheme1-Loop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FC13A9E116B476B800394086 /* BattleTheme1-Loop.mp3 */; };
 		FC13A9E616B47A1200394086 /* basic-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC13A9E416B47A1200394086 /* basic-hd.plist */; };
 		FC13A9E716B47A1200394086 /* basic-hd.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = FC13A9E516B47A1200394086 /* basic-hd.pvr.ccz */; };
-		FC13A9F416B48DAA00394086 /* EggDeath.caf in Resources */ = {isa = PBXBuildFile; fileRef = FC13A9ED16B48DAA00394086 /* EggDeath.caf */; };
-		FC13A9F516B48DAA00394086 /* EvilLaugh1.caf in Resources */ = {isa = PBXBuildFile; fileRef = FC13A9EE16B48DAA00394086 /* EvilLaugh1.caf */; };
-		FC13A9F616B48DAA00394086 /* EvilLaugh2.caf in Resources */ = {isa = PBXBuildFile; fileRef = FC13A9EF16B48DAA00394086 /* EvilLaugh2.caf */; };
 		FC13A9F716B48DAA00394086 /* PumpingUp-Alternate.caf in Resources */ = {isa = PBXBuildFile; fileRef = FC13A9F016B48DAA00394086 /* PumpingUp-Alternate.caf */; };
 		FC13A9F816B48DAA00394086 /* PumpingUp.caf in Resources */ = {isa = PBXBuildFile; fileRef = FC13A9F116B48DAA00394086 /* PumpingUp.caf */; };
-		FC13A9F916B48DAA00394086 /* ScrambleYou.caf in Resources */ = {isa = PBXBuildFile; fileRef = FC13A9F216B48DAA00394086 /* ScrambleYou.caf */; };
-		FC13A9FA16B48DAA00394086 /* TasteMyBacon.caf in Resources */ = {isa = PBXBuildFile; fileRef = FC13A9F316B48DAA00394086 /* TasteMyBacon.caf */; };
 		FC13A9FD16B4901900394086 /* SoundEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = FC13A9FC16B4901700394086 /* SoundEffects.m */; };
 		FC13A9FF16B4927800394086 /* Heartbeat-Tap.caf in Resources */ = {isa = PBXBuildFile; fileRef = FC13A9FE16B4927800394086 /* Heartbeat-Tap.caf */; };
 		FC13AA0916B498FC00394086 /* BattleTheme-Lose.caf in Resources */ = {isa = PBXBuildFile; fileRef = FC13AA0416B498FA00394086 /* BattleTheme-Lose.caf */; };
@@ -161,10 +156,21 @@
 		FC13AA0D16B498FC00394086 /* Pumping-2Bleeps.caf in Resources */ = {isa = PBXBuildFile; fileRef = FC13AA0816B498FB00394086 /* Pumping-2Bleeps.caf */; };
 		FC13AA0F16B4A24F00394086 /* fire.png in Resources */ = {isa = PBXBuildFile; fileRef = FC13AA0E16B4A24F00394086 /* fire.png */; };
 		FC13AA1316B4A60700394086 /* AttackGenericHit.caf in Resources */ = {isa = PBXBuildFile; fileRef = FC13AA1016B4A60500394086 /* AttackGenericHit.caf */; };
-		FC13AA1416B4A60700394086 /* PlayerAttack1.caf in Resources */ = {isa = PBXBuildFile; fileRef = FC13AA1116B4A60600394086 /* PlayerAttack1.caf */; };
 		FC13AA1516B4A60700394086 /* PlayerAttack2.caf in Resources */ = {isa = PBXBuildFile; fileRef = FC13AA1216B4A60600394086 /* PlayerAttack2.caf */; };
 		FC13AA1816B4AD7900394086 /* EggmanLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FC13AA1716B4AD7700394086 /* EggmanLayer.m */; };
 		FC13AA1B16B4AE8500394086 /* ArtificialHeartLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FC13AA1A16B4AE8300394086 /* ArtificialHeartLayer.m */; };
+		FC13AA2F16B4B22B00394086 /* Egg-Bacon.caf in Resources */ = {isa = PBXBuildFile; fileRef = FC13AA2216B4B22B00394086 /* Egg-Bacon.caf */; };
+		FC13AA3016B4B22B00394086 /* Egg-Death.caf in Resources */ = {isa = PBXBuildFile; fileRef = FC13AA2316B4B22B00394086 /* Egg-Death.caf */; };
+		FC13AA3116B4B22B00394086 /* Egg-EvilLaugh.caf in Resources */ = {isa = PBXBuildFile; fileRef = FC13AA2416B4B22B00394086 /* Egg-EvilLaugh.caf */; };
+		FC13AA3216B4B22B00394086 /* Egg-EvilLaugh2.caf in Resources */ = {isa = PBXBuildFile; fileRef = FC13AA2516B4B22B00394086 /* Egg-EvilLaugh2.caf */; };
+		FC13AA3316B4B22B00394086 /* Egg-ScrambleYou.caf in Resources */ = {isa = PBXBuildFile; fileRef = FC13AA2616B4B22B00394086 /* Egg-ScrambleYou.caf */; };
+		FC13AA3416B4B22B00394086 /* Player-Death.caf in Resources */ = {isa = PBXBuildFile; fileRef = FC13AA2816B4B22B00394086 /* Player-Death.caf */; };
+		FC13AA3516B4B22B00394086 /* Player-EffortsInVein.caf in Resources */ = {isa = PBXBuildFile; fileRef = FC13AA2916B4B22B00394086 /* Player-EffortsInVein.caf */; };
+		FC13AA3616B4B22B00394086 /* Player-Karate1.caf in Resources */ = {isa = PBXBuildFile; fileRef = FC13AA2A16B4B22B00394086 /* Player-Karate1.caf */; };
+		FC13AA3716B4B22B00394086 /* Player-Karate2.caf in Resources */ = {isa = PBXBuildFile; fileRef = FC13AA2B16B4B22B00394086 /* Player-Karate2.caf */; };
+		FC13AA3816B4B22B00394086 /* Player-WhyAorta.caf in Resources */ = {isa = PBXBuildFile; fileRef = FC13AA2C16B4B22B00394086 /* Player-WhyAorta.caf */; };
+		FC13AA3916B4B22B00394086 /* PlayerAttack1Hit.caf in Resources */ = {isa = PBXBuildFile; fileRef = FC13AA2D16B4B22B00394086 /* PlayerAttack1Hit.caf */; };
+		FC13AA3A16B4B22B00394086 /* PlayerAttack1Launch.caf in Resources */ = {isa = PBXBuildFile; fileRef = FC13AA2E16B4B22B00394086 /* PlayerAttack1Launch.caf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -448,13 +454,8 @@
 		FC13A9E116B476B800394086 /* BattleTheme1-Loop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "BattleTheme1-Loop.mp3"; sourceTree = "<group>"; };
 		FC13A9E416B47A1200394086 /* basic-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "basic-hd.plist"; path = "HeartPG/Resources/SpriteSheets/basic-hd.plist"; sourceTree = "<group>"; };
 		FC13A9E516B47A1200394086 /* basic-hd.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = "basic-hd.pvr.ccz"; path = "HeartPG/Resources/SpriteSheets/basic-hd.pvr.ccz"; sourceTree = "<group>"; };
-		FC13A9ED16B48DAA00394086 /* EggDeath.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EggDeath.caf; sourceTree = "<group>"; };
-		FC13A9EE16B48DAA00394086 /* EvilLaugh1.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EvilLaugh1.caf; sourceTree = "<group>"; };
-		FC13A9EF16B48DAA00394086 /* EvilLaugh2.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EvilLaugh2.caf; sourceTree = "<group>"; };
 		FC13A9F016B48DAA00394086 /* PumpingUp-Alternate.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PumpingUp-Alternate.caf"; sourceTree = "<group>"; };
 		FC13A9F116B48DAA00394086 /* PumpingUp.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PumpingUp.caf; sourceTree = "<group>"; };
-		FC13A9F216B48DAA00394086 /* ScrambleYou.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ScrambleYou.caf; sourceTree = "<group>"; };
-		FC13A9F316B48DAA00394086 /* TasteMyBacon.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = TasteMyBacon.caf; sourceTree = "<group>"; };
 		FC13A9FB16B4901500394086 /* SoundEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundEffects.h; sourceTree = "<group>"; };
 		FC13A9FC16B4901700394086 /* SoundEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundEffects.m; sourceTree = "<group>"; };
 		FC13A9FE16B4927800394086 /* Heartbeat-Tap.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Heartbeat-Tap.caf"; sourceTree = "<group>"; };
@@ -465,12 +466,23 @@
 		FC13AA0816B498FB00394086 /* Pumping-2Bleeps.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pumping-2Bleeps.caf"; sourceTree = "<group>"; };
 		FC13AA0E16B4A24F00394086 /* fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fire.png; path = Resources/fire.png; sourceTree = "<group>"; };
 		FC13AA1016B4A60500394086 /* AttackGenericHit.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AttackGenericHit.caf; sourceTree = "<group>"; };
-		FC13AA1116B4A60600394086 /* PlayerAttack1.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PlayerAttack1.caf; sourceTree = "<group>"; };
 		FC13AA1216B4A60600394086 /* PlayerAttack2.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PlayerAttack2.caf; sourceTree = "<group>"; };
 		FC13AA1616B4AD7600394086 /* EggmanLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EggmanLayer.h; sourceTree = "<group>"; };
 		FC13AA1716B4AD7700394086 /* EggmanLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EggmanLayer.m; sourceTree = "<group>"; };
 		FC13AA1916B4AE8100394086 /* ArtificialHeartLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtificialHeartLayer.h; sourceTree = "<group>"; };
 		FC13AA1A16B4AE8300394086 /* ArtificialHeartLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtificialHeartLayer.m; sourceTree = "<group>"; };
+		FC13AA2216B4B22B00394086 /* Egg-Bacon.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Egg-Bacon.caf"; sourceTree = "<group>"; };
+		FC13AA2316B4B22B00394086 /* Egg-Death.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Egg-Death.caf"; sourceTree = "<group>"; };
+		FC13AA2416B4B22B00394086 /* Egg-EvilLaugh.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Egg-EvilLaugh.caf"; sourceTree = "<group>"; };
+		FC13AA2516B4B22B00394086 /* Egg-EvilLaugh2.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Egg-EvilLaugh2.caf"; sourceTree = "<group>"; };
+		FC13AA2616B4B22B00394086 /* Egg-ScrambleYou.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Egg-ScrambleYou.caf"; sourceTree = "<group>"; };
+		FC13AA2816B4B22B00394086 /* Player-Death.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Player-Death.caf"; sourceTree = "<group>"; };
+		FC13AA2916B4B22B00394086 /* Player-EffortsInVein.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Player-EffortsInVein.caf"; sourceTree = "<group>"; };
+		FC13AA2A16B4B22B00394086 /* Player-Karate1.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Player-Karate1.caf"; sourceTree = "<group>"; };
+		FC13AA2B16B4B22B00394086 /* Player-Karate2.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Player-Karate2.caf"; sourceTree = "<group>"; };
+		FC13AA2C16B4B22B00394086 /* Player-WhyAorta.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Player-WhyAorta.caf"; sourceTree = "<group>"; };
+		FC13AA2D16B4B22B00394086 /* PlayerAttack1Hit.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PlayerAttack1Hit.caf; sourceTree = "<group>"; };
+		FC13AA2E16B4B22B00394086 /* PlayerAttack1Launch.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PlayerAttack1Launch.caf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -967,8 +979,11 @@
 		FC13A9EC16B48DAA00394086 /* Effects */ = {
 			isa = PBXGroup;
 			children = (
+				FC13AA2116B4B22B00394086 /* Enemies */,
+				FC13AA2716B4B22B00394086 /* Player */,
+				FC13AA2D16B4B22B00394086 /* PlayerAttack1Hit.caf */,
+				FC13AA2E16B4B22B00394086 /* PlayerAttack1Launch.caf */,
 				FC13AA1016B4A60500394086 /* AttackGenericHit.caf */,
-				FC13AA1116B4A60600394086 /* PlayerAttack1.caf */,
 				FC13AA1216B4A60600394086 /* PlayerAttack2.caf */,
 				FC13AA0416B498FA00394086 /* BattleTheme-Lose.caf */,
 				FC13AA0516B498FA00394086 /* BattleTheme-Win.caf */,
@@ -976,15 +991,34 @@
 				FC13AA0716B498FB00394086 /* Pumping-1Bleep.caf */,
 				FC13AA0816B498FB00394086 /* Pumping-2Bleeps.caf */,
 				FC13A9FE16B4927800394086 /* Heartbeat-Tap.caf */,
-				FC13A9ED16B48DAA00394086 /* EggDeath.caf */,
-				FC13A9EE16B48DAA00394086 /* EvilLaugh1.caf */,
-				FC13A9EF16B48DAA00394086 /* EvilLaugh2.caf */,
 				FC13A9F016B48DAA00394086 /* PumpingUp-Alternate.caf */,
 				FC13A9F116B48DAA00394086 /* PumpingUp.caf */,
-				FC13A9F216B48DAA00394086 /* ScrambleYou.caf */,
-				FC13A9F316B48DAA00394086 /* TasteMyBacon.caf */,
 			);
 			path = Effects;
+			sourceTree = "<group>";
+		};
+		FC13AA2116B4B22B00394086 /* Enemies */ = {
+			isa = PBXGroup;
+			children = (
+				FC13AA2216B4B22B00394086 /* Egg-Bacon.caf */,
+				FC13AA2316B4B22B00394086 /* Egg-Death.caf */,
+				FC13AA2416B4B22B00394086 /* Egg-EvilLaugh.caf */,
+				FC13AA2516B4B22B00394086 /* Egg-EvilLaugh2.caf */,
+				FC13AA2616B4B22B00394086 /* Egg-ScrambleYou.caf */,
+			);
+			path = Enemies;
+			sourceTree = "<group>";
+		};
+		FC13AA2716B4B22B00394086 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				FC13AA2816B4B22B00394086 /* Player-Death.caf */,
+				FC13AA2916B4B22B00394086 /* Player-EffortsInVein.caf */,
+				FC13AA2A16B4B22B00394086 /* Player-Karate1.caf */,
+				FC13AA2B16B4B22B00394086 /* Player-Karate2.caf */,
+				FC13AA2C16B4B22B00394086 /* Player-WhyAorta.caf */,
+			);
+			path = Player;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1057,13 +1091,8 @@
 				FC13A9E316B476B800394086 /* BattleTheme1-Loop.mp3 in Resources */,
 				FC13A9E616B47A1200394086 /* basic-hd.plist in Resources */,
 				FC13A9E716B47A1200394086 /* basic-hd.pvr.ccz in Resources */,
-				FC13A9F416B48DAA00394086 /* EggDeath.caf in Resources */,
-				FC13A9F516B48DAA00394086 /* EvilLaugh1.caf in Resources */,
-				FC13A9F616B48DAA00394086 /* EvilLaugh2.caf in Resources */,
 				FC13A9F716B48DAA00394086 /* PumpingUp-Alternate.caf in Resources */,
 				FC13A9F816B48DAA00394086 /* PumpingUp.caf in Resources */,
-				FC13A9F916B48DAA00394086 /* ScrambleYou.caf in Resources */,
-				FC13A9FA16B48DAA00394086 /* TasteMyBacon.caf in Resources */,
 				FC13A9FF16B4927800394086 /* Heartbeat-Tap.caf in Resources */,
 				FC13AA0916B498FC00394086 /* BattleTheme-Lose.caf in Resources */,
 				FC13AA0A16B498FC00394086 /* BattleTheme-Win.caf in Resources */,
@@ -1072,8 +1101,19 @@
 				FC13AA0D16B498FC00394086 /* Pumping-2Bleeps.caf in Resources */,
 				FC13AA0F16B4A24F00394086 /* fire.png in Resources */,
 				FC13AA1316B4A60700394086 /* AttackGenericHit.caf in Resources */,
-				FC13AA1416B4A60700394086 /* PlayerAttack1.caf in Resources */,
 				FC13AA1516B4A60700394086 /* PlayerAttack2.caf in Resources */,
+				FC13AA2F16B4B22B00394086 /* Egg-Bacon.caf in Resources */,
+				FC13AA3016B4B22B00394086 /* Egg-Death.caf in Resources */,
+				FC13AA3116B4B22B00394086 /* Egg-EvilLaugh.caf in Resources */,
+				FC13AA3216B4B22B00394086 /* Egg-EvilLaugh2.caf in Resources */,
+				FC13AA3316B4B22B00394086 /* Egg-ScrambleYou.caf in Resources */,
+				FC13AA3416B4B22B00394086 /* Player-Death.caf in Resources */,
+				FC13AA3516B4B22B00394086 /* Player-EffortsInVein.caf in Resources */,
+				FC13AA3616B4B22B00394086 /* Player-Karate1.caf in Resources */,
+				FC13AA3716B4B22B00394086 /* Player-Karate2.caf in Resources */,
+				FC13AA3816B4B22B00394086 /* Player-WhyAorta.caf in Resources */,
+				FC13AA3916B4B22B00394086 /* PlayerAttack1Hit.caf in Resources */,
+				FC13AA3A16B4B22B00394086 /* PlayerAttack1Launch.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

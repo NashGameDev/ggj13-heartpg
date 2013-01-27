@@ -11,11 +11,20 @@
 #import "HeartCharacterLayer.h"
 #import "EnemyCharacterLayer.h"
 
+typedef enum {
+    kGameBattle,
+    kGameTransition
+    
+} GameState;
+
 @interface CombatScene : CCScene<UIGestureRecognizerDelegate> {
     
 }
 
 @property(strong, nonatomic) HeartCharacterLayer* heartLayer;
 @property(strong, nonatomic) EnemyCharacterLayer* enemyLayer;
+
+@property(assign, nonatomic) GameState state;
+
 
 @end

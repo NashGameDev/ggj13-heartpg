@@ -43,7 +43,7 @@
     particle.position = ccp(0,0);
     [self addChild:particle];
     
-    [[SimpleAudioEngine sharedEngine] playEffect:kAttachGenericHit];
+    [[SimpleAudioEngine sharedEngine] playEffect:kPlayerKarate2];
 }
 
 -(void) hitUp:(NSInteger)characterPower {

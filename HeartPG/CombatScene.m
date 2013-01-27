@@ -7,7 +7,7 @@
 //
 
 #import "CombatScene.h"
-#import "SimpleAudioEngine.h"
+#import "SoundEffects.h"
 #import "EggmanLayer.h"
 #import "ArtificialHeartLayer.h"
 
@@ -25,7 +25,6 @@
         
         // start playing the background music
         [SimpleAudioEngine sharedEngine].backgroundMusicVolume = 0.3;
-        [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"BattleTheme1-Loop.mp3" loop:YES];
         
         [self setupGestures];
 	}
@@ -37,17 +36,15 @@
     [self.enemyLayer removeFromParentAndCleanup:YES];
     self.enemyLayer = enemy;
     self.enemyLayer.position = ccp(self.contentSize.width/4 * 3, self.contentSize.height/2.0);
-    [self addChild:self.enemyLayer];    
+    [self addChild:self.enemyLayer];
+    [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"BattleTheme1-Loop.mp3" loop:YES];
+    self.state = kGameBattle;
 }
 
 -(void) setupGestures {
     UITapGestureRecognizer * tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTapGesture:)];
     [self.heartLayer.pump addGestureRecognizer:tapGestureRecognizer];
     tapGestureRecognizer.delegate = self;
-    
-    UIGestureRecognizer *panGestureRecognizer2 = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePanGesture:)];
-    panGestureRecognizer2.delegate = self;
-    [self.heartLayer.pump addGestureRecognizer:panGestureRecognizer2];
     
     
     UISwipeGestureRecognizer *swipeLeftRight = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipeSide:)];
@@ -68,19 +65,33 @@
     return YES;
 }
 
+-(void) completeTransitionToNextEnemy {
+    if ([self.enemyLayer isKindOfClass:[EggmanLayer class]]) {
+        [self addEnemy:[ArtificialHeartLayer node]];
+    } else {
+        // you win completely?
+    }
+}
+
+-(void) doTransitionToNextEnemy {
+    self.state = kGameTransition;
+    [[SimpleAudioEngine sharedEngine] stopBackgroundMusic];
+    [[SimpleAudioEngine sharedEngine] playEffect:kBattleThemeWin];
+    [self.enemyLayer.enemyGraphic runAction:[CCMoveBy actionWithDuration:0.3 position:ccp(self.enemyLayer.enemyGraphic.position.x, -self.contentSize.height*2)]];
+
+    [self scheduleOnce:@selector(completeTransitionToNextEnemy) delay:4.8];
+}
+
+
 - (void)handleSwipeSide:(UISwipeGestureRecognizer*)recognizer
 {
+    if (self.state != kGameBattle) return;
+    
     [self.enemyLayer hitSide:self.heartLayer.heart.pumpLevel];
     
     // detect death
     if (self.enemyLayer.health <= 0) {
-        if ([self.enemyLayer isKindOfClass:[EggmanLayer class]]) {
-            [self addEnemy:[ArtificialHeartLayer node]];
-        } else {
-            [self.enemyLayer removeFromParentAndCleanup:YES];
-//            [[SimpleAudioEngine sharedEngine] playEffect:]
-        }
-        
+        [self doTransitionToNextEnemy];        
     }
 }
 
@@ -105,6 +116,7 @@
 }
 
 - (void)handleTapGesture:(UITapGestureRecognizer*)recognizer {
+    if (self.state != kGameBattle) return;
     [self.heartLayer.heart pump:kBasicPump];
 }
 
