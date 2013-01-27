@@ -18,4 +18,6 @@
 @property(strong, nonatomic) CCSprite* bagtop;
 @property(strong, nonatomic) CCSprite* bagbottom;
 
+@property(assign, nonatomic) NSInteger health;
+
 @end

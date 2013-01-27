@@ -133,6 +133,7 @@
     [self.heartLayer.heart pump:kBasicPump];
     [self.heartLayer.pump stopAllActions];
     [self.heartLayer.pump runAction:[CCSequence actionOne:[CCScaleTo actionWithDuration:0.1 scale:0.8] two:[CCScaleTo actionWithDuration:0.1 scale:1.0]] ];
+    self.heartLayer.health -= 5;
 }
 
 
