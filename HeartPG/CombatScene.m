@@ -114,6 +114,13 @@
     self.heartLayer.health -= 15;
     [self.enemyLayer playHitEffect];
     
+    if (self.heartLayer.health <= 0) {
+        self.state = kGameEnd;
+        [[SimpleAudioEngine sharedEngine] stopBackgroundMusic];
+        [[SimpleAudioEngine sharedEngine] playEffect:kPlayerDeath];
+        [self.heartLayer.heart runAction:[CCRepeatForever actionWithAction:[CCRotateBy actionWithDuration:0.2 angle:360.0]]];
+    }
+    
 }
 
 - (void)handleSwipeUpDown:(UISwipeGestureRecognizer*)recognizer
